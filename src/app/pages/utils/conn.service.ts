@@ -490,7 +490,7 @@ export class ConnService {
    * 获取当前用户GID
    */
   getGID(): string {
-    let User_Gid = '7000020126';
+    let User_Gid = '00000';
     return User_Gid;
   }
 

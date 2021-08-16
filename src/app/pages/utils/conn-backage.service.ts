@@ -24,9 +24,8 @@ export class ConnService {
     public constUtil: ConstUtilsService,
     private message: NzMessageService,
     private _matSnackBar: MatSnackBar,
-    private notification: NzNotificationService
-  ) // private translate: TranslateService
-  {
+    private notification: NzNotificationService // private translate: TranslateService
+  ) {
     // translate.setTranslation(english.lang, english.data, true);
     // translate.setTranslation(chinese.lang, chinese.data, true);
     // translate.setTranslation(japanese.lang, japanese.data, true);
@@ -703,7 +702,7 @@ export class ConnService {
    * 获取当前用户GID
    */
   getGID(): string {
-    let User_Gid = '7000020126';
+    let User_Gid = '00000';
     return User_Gid;
   }
 
