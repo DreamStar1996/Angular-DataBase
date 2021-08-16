@@ -60,7 +60,7 @@ export class NgxDatabaseComponent implements OnInit {
     translate.setTranslation(english.lang, english.data, true);
     translate.setTranslation(chinese.lang, chinese.data, true);
     translate.setTranslation(japanese.lang, japanese.data, true);
-    this.fetch((data) => {
+    this.fetch((data: any) => {
       this.rows = data;
     });
   }
@@ -70,9 +70,9 @@ export class NgxDatabaseComponent implements OnInit {
     //this.db.queryHotel('').subscribe((x) => {});
   }
 
-  fetch(cb) {
+  fetch(cb: any) {
     const req = new XMLHttpRequest();
-    req.open('GET', `assets/data/company.json`);
+    req.open('GET', `../data/company.json`);
 
     req.onload = () => {
       const data = JSON.parse(req.response);
