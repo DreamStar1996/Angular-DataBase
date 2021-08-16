@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ColumnMode, SortType } from '@swimlane/ngx-datatable';
 import { ConnService } from '../utils/conn.service';
 import { DateUtilsService } from '../utils/date-utils.service';
-import { NzNotificationService } from 'ng-zorro-antd/notification';
+//import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { ViewEncapsulation } from '@angular/core';
 import { TransferItem } from 'ng-zorro-antd/transfer';
 import { locale as chinese } from '../i18n/cn';
@@ -15,7 +15,7 @@ import {
   MAT_DATE_FORMATS,
   MAT_DATE_LOCALE,
 } from '@angular/material/core';
-import { PagesService } from '../pages.service';
+//import { PagesService } from '../pages.service';
 
 export const MY_FORMATS = {
   parse: {
@@ -52,14 +52,14 @@ export class NgxDatabaseComponent implements OnInit {
   SortType = SortType;
 
   constructor(
-    private db: PagesService,
+    // private db: PagesService,
     public dateUtils: DateUtilsService,
-    private notification: NzNotificationService,
-    private translate: TranslateService
+    //private notification: NzNotificationService,
+    //private translate: TranslateService
   ) {
-    translate.setTranslation(english.lang, english.data, true);
-    translate.setTranslation(chinese.lang, chinese.data, true);
-    translate.setTranslation(japanese.lang, japanese.data, true);
+    // translate.setTranslation(english.lang, english.data, true);
+    // translate.setTranslation(chinese.lang, chinese.data, true);
+    // translate.setTranslation(japanese.lang, japanese.data, true);
     this.fetch((data: any) => {
       this.rows = data;
     });
