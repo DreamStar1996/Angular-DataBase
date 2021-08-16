@@ -9,14 +9,12 @@ import { HttpClient } from '@angular/common/http';
 export class PagesService {
   constructor(private http: HttpClient, public conn: ConnService) {}
 
-  queryHotel(pageNo = 1, pageSize = 10, filterpara: any): Observable<any> {
+  queryHotel(filterpara: any): Observable<any> {
     const addr = '/Report/QueryTVHotel';
     const params = {
       currentUserGID: filterpara.currentUserGID,
       legalEntityCode: filterpara.legalEntityCode,
       CostCenterCode: filterpara.CostCenterCode,
-      limit: pageSize,
-      page: pageNo,
       isDesc: filterpara.isDesc,
       order: filterpara.order || '',
     };

@@ -10,7 +10,12 @@ import { locale as english } from '../i18n/en';
 import { locale as japanese } from '../i18n/ja';
 import { TranslateService } from '@ngx-translate/core';
 import { MomentDateAdapter } from '@angular/material-moment-adapter';
-import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import {
+  DateAdapter,
+  MAT_DATE_FORMATS,
+  MAT_DATE_LOCALE,
+} from '@angular/material/core';
+import { PagesService } from '../pages.service';
 
 export const MY_FORMATS = {
   parse: {
@@ -46,13 +51,24 @@ export class NgxDatabaseComponent implements OnInit {
   ColumnMode = ColumnMode;
   SortType = SortType;
 
-  constructor() {
+  constructor(
+    private db: PagesService,
+    public dateUtils: DateUtilsService,
+    private notification: NzNotificationService,
+    private translate: TranslateService
+  ) {
+    translate.setTranslation(english.lang, english.data, true);
+    translate.setTranslation(chinese.lang, chinese.data, true);
+    translate.setTranslation(japanese.lang, japanese.data, true);
     this.fetch((data) => {
       this.rows = data;
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    //this.db.exportTVHotel('');
+    //this.db.queryHotel('').subscribe((x) => {});
+  }
 
   fetch(cb) {
     const req = new XMLHttpRequest();
