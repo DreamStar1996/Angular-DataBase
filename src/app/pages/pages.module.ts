@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome' },
   {
     path: 'welcome',
-    loadChildren: () =>
-      import('./welcome/welcome.module').then((m) => m.WelcomeModule),
+    component: WelcomeComponent,
   },
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [RouterModule.forRoot(routes), CommonModule],
+  declarations: [WelcomeComponent],
+  imports: [RouterModule.forRoot(routes), CommonModule, NgxDatatableModule],
   exports: [RouterModule],
 })
-export class PagesModule {}
+export class PagesModule { }
