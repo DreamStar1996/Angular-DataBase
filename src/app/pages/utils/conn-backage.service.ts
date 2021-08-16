@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Observer } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { DateUtilsService } from './date-utils.service';
 import { ConstUtilsService } from './const-utils.service';
-
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
-import { DateUtilsService } from './date-utils.service';
+// import { locale as chinese } from "../utils/i18n/cn";
+// import { locale as english } from "../utils/i18n/en";
+// import { locale as japanese } from "../utils/i18n/jp";
+// import { TranslateService } from "@ngx-translate/core";
 
 @Injectable({
   providedIn: 'root',
@@ -15,19 +19,36 @@ export class ConnService {
 
   constructor(
     public _httpClient: HttpClient,
-    public constUtil: ConstUtilsService,
     public dateUtil: DateUtilsService,
+    // public store: LocalStorage,
+    public constUtil: ConstUtilsService,
     private message: NzMessageService,
+    private _matSnackBar: MatSnackBar,
     private notification: NzNotificationService
-  ) {}
-
+  ) // private translate: TranslateService
+  {
+    // translate.setTranslation(english.lang, english.data, true);
+    // translate.setTranslation(chinese.lang, chinese.data, true);
+    // translate.setTranslation(japanese.lang, japanese.data, true);
+    // store.set("User_Gid", "");
+    // store.set("companyType", "");
+    // store.set("User_Gid", "5109200363"); //CBD chenlili
+    // store.set("User_Gid","5109u11745")//CSMC zzh
+    // store.set('companyType', '1') //CSMC
+    // store.set("User_Gid", "5201E20031"); //SIE
+    // store.set("companyType", "2"); //SIE
+  }
   id: any;
+  // IsPRCUserFlag: boolean;
+  // OutOfficeFlag: boolean;
+
+  // SystemWaitMessage: string;
+  // FinshMessage: string;
+  // SystemErrorMessage: string;
 
   getDate() {
     return this.dateUtil.dateFormat('YYYY-mm-dd HH:MM:SS', new Date());
   }
-
-
   get(url: string, params?: any, useBlob: boolean = false): Observable<any> {
     let paramsStr: string = '';
     let hasParam: boolean = false;
@@ -47,6 +68,19 @@ export class ConnService {
       }
     }
 
+    // this.translate.onLangChange.subscribe((x) => {
+    //     this.SystemWaitMessage = this.translate.instant(
+    //         "SystemWaitMessage"
+    //     );
+    //     this.FinshMessage = this.translate.instant("FinshMessage");
+    //     this.SystemErrorMessage = this.translate.instant(
+    //         "SystemErrorMessage"
+    //     );
+    // });
+    // this.SystemWaitMessage = this.translate.instant("SystemWaitMessage");
+    // this.FinshMessage = this.translate.instant("FinshMessage");
+    // this.SystemErrorMessage = this.translate.instant("SystemErrorMessage");
+
     let accessURL = this.constUtil.getBaseURL() + url + paramsStr;
     console.log(this.getDate() + '>>get url access = ' + accessURL);
     let observable = this._httpClient.get<any>(
@@ -54,9 +88,9 @@ export class ConnService {
       this.getOption(useBlob)
     );
     this.message.remove();
-    this.id = this.message.loading('Test Get Id Message', {
-      nzDuration: 0,
-    }).messageId;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
     if (useBlob) {
       observable.subscribe(
         (data) => {
@@ -87,9 +121,9 @@ export class ConnService {
             document.body.removeChild(link);
           }
           this.message.remove();
-          this.message.success("Finsh Message", {
-            nzDuration: 1500,
-          });
+          // this.message.success(this.FinshMessage, {
+          //     nzDuration: 1500,
+          // });
         },
         (errres) => {
           debugger;
@@ -106,12 +140,12 @@ export class ConnService {
                 nzDuration: 0,
               });
             } else {
-              this.notification.create(
-                'error',
-                'Error',
-                'Test Get Error Message',
-                { nzDuration: 0 }
-              );
+              // this.notification.create(
+              //     "error",
+              //     "Error",
+              //     this.SystemErrorMessage,
+              //     { nzDuration: 0 }
+              // );
             }
           };
         }
@@ -123,15 +157,15 @@ export class ConnService {
         observable.subscribe(
           (successRes: any) => {
             this.message.remove();
-            this.message.success("Finsh Message", {
-              nzDuration: 2500,
-            });
+            // this.message.success(this.FinshMessage, {
+            //     nzDuration: 2500,
+            // });
             observer.next(successRes);
             if (successRes.Code != 0) {
               this.notification.create(
                 'warning',
                 'Message',
-                'Test Get Warning Message',
+                successRes.MessageEN,
                 { nzDuration: 0 }
               );
             }
@@ -147,16 +181,16 @@ export class ConnService {
               this.notification.create(
                 'warning',
                 'Warning',
-                'Test Warning Error Message',
+                errorRes.error.MessageEN,
                 { nzDuration: 0 }
               );
             } else {
-              this.notification.create(
-                'error',
-                'Error',
-                'Test Get Error Message',
-                { nzDuration: 0 }
-              );
+              // this.notification.create(
+              //     "error",
+              //     "Error",
+              //     this.SystemErrorMessage,
+              //     { nzDuration: 0 }
+              // );
             }
             observer.complete();
             return;
@@ -166,13 +200,46 @@ export class ConnService {
     }
   }
 
+  getEntity<T>(url: string, params?: any): Observable<T> {
+    let paramsStr: string = '';
+    let hasParam: boolean = false;
+    if (params) {
+      let paramCount = 0;
+      for (let key in params) {
+        hasParam = true;
+        paramCount += 1;
+        if (paramCount === 1) {
+          paramsStr += key + '=' + params[key];
+        } else {
+          paramsStr += '&' + key + '=' + params[key];
+        }
+      }
+      if (hasParam) {
+        paramsStr = '?' + paramsStr;
+      }
+    }
+
+    let accessURL = this.constUtil.getBaseURL() + url + paramsStr;
+    console.log('get url access = ' + accessURL);
+    let observable = this._httpClient.get<T>(accessURL, this.getOption());
+    return observable;
+  }
+
   post(url: string, body: any): Observable<any> {
     let accessURL = this.constUtil.getBaseURL() + url;
+    console.log(
+      this.getDate() +
+        '>>post url access >> ' +
+        accessURL +
+        ' >> body' +
+        JSON.stringify(body)
+    );
     let observable = this._httpClient.post(accessURL, body, this.getOption());
+    // return observable;
     this.message.remove();
-    this.id = this.message.loading('Test Post Id Message', {
-      nzDuration: 0,
-    }).messageId;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
     return new Observable((observer: Observer<any>) => {
       observable.subscribe(
         (successRes: any) => {
@@ -199,16 +266,16 @@ export class ConnService {
             this.notification.create(
               'warning',
               'Warning',
-              'Test Post Warning Message',
+              errorRes.error.MessageEN,
               { nzDuration: 0 }
             );
           } else {
-            this.notification.create(
-              'error',
-              'Error',
-              'Test Post Error Message',
-              { nzDuration: 0 }
-            );
+            // this.notification.create(
+            //     "error",
+            //     "Error",
+            //     this.SystemErrorMessage,
+            //     { nzDuration: 0 }
+            // );
           }
           observer.complete();
           return;
@@ -217,6 +284,73 @@ export class ConnService {
     });
   }
 
+  postManually(url: string, body: any): Observable<any> {
+    let accessURL = this.constUtil.getBaseURL() + url;
+    let observable = this._httpClient.post(accessURL, body, this.getOption());
+    // return observable;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
+    return new Observable((observer: Observer<any>) => {
+      observable.subscribe(
+        (successRes: any) => {
+          // this.message.remove();
+          // this.message.success("Finished!", {
+          //     nzDuration: 800,
+          // });
+          observer.next(successRes);
+          if (successRes.Code != 0) {
+            this.notification.create(
+              'warning',
+              'Message',
+              successRes.MessageEN,
+              { nzDuration: 0 }
+            );
+          }
+          observer.complete();
+          return;
+        },
+        (errorRes: any) => {
+          // this.message.remove();
+          observer.error(errorRes);
+          if (errorRes.error.Code && errorRes.error.MessageEN) {
+            this.notification.create(
+              'warning',
+              'Warning',
+              errorRes.error.MessageEN,
+              { nzDuration: 0 }
+            );
+          } else {
+            // this.notification.create(
+            //     "error",
+            //     "Error",
+            //     this.SystemErrorMessage,
+            //     { nzDuration: 0 }
+            // );
+          }
+          observer.complete();
+          return;
+        }
+      );
+    });
+  }
+
+  postEntity<T>(url: string, body: any): Observable<T> {
+    let accessURL = this.constUtil.getBaseURL() + url;
+    console.log(
+      this.getDate() +
+        '>>post url access >> ' +
+        accessURL +
+        ' >> body' +
+        JSON.stringify(body)
+    );
+    let observable = this._httpClient.post<T>(
+      accessURL,
+      body,
+      this.getOption()
+    );
+    return observable;
+  }
   put(url: string, body: any): Observable<any> {
     let accessURL = this.constUtil.getBaseURL() + url;
     console.log(
@@ -229,9 +363,9 @@ export class ConnService {
     let observable = this._httpClient.put(accessURL, body, this.getOption());
     // return observable;
     this.message.remove();
-    this.id = this.message.loading('Test Put Id Message', {
-      nzDuration: 0,
-    }).messageId;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
     return new Observable((observer: Observer<any>) => {
       observable.subscribe(
         (successRes: any) => {
@@ -258,16 +392,16 @@ export class ConnService {
             this.notification.create(
               'warning',
               'Warning',
-              'Test Put Warning Message',
+              errorRes.error.MessageEN,
               { nzDuration: 0 }
             );
           } else {
-            this.notification.create(
-              'error',
-              'Error',
-              'Test Put Error Message',
-              { nzDuration: 0 }
-            );
+            // this.notification.create(
+            //     "error",
+            //     "Error",
+            //     this.SystemErrorMessage,
+            //     { nzDuration: 0 }
+            // );
           }
           observer.complete();
           return;
@@ -275,7 +409,6 @@ export class ConnService {
       );
     });
   }
-
   patch(url: string, body: any): Observable<any> {
     let accessURL = this.constUtil.getBaseURL() + url;
     console.log(
@@ -288,9 +421,9 @@ export class ConnService {
     let observable = this._httpClient.patch(accessURL, body, this.getOption());
     // return observable;
     this.message.remove();
-    this.id = this.message.loading('Test Patch Id Message', {
-      nzDuration: 0,
-    }).messageId;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
     return new Observable((observer: Observer<any>) => {
       observable.subscribe(
         (successRes: any) => {
@@ -317,16 +450,16 @@ export class ConnService {
             this.notification.create(
               'warning',
               'Warning',
-              'Test Patch Warning Message',
+              errorRes.error.MessageEN,
               { nzDuration: 0 }
             );
           } else {
-            this.notification.create(
-              'error',
-              'Error',
-              'Test Patch Error Message',
-              { nzDuration: 0 }
-            );
+            // this.notification.create(
+            //     "error",
+            //     "Error",
+            //     this.SystemErrorMessage,
+            //     { nzDuration: 0 }
+            // );
           }
 
           observer.complete();
@@ -335,7 +468,18 @@ export class ConnService {
       );
     });
   }
-
+  patchEntity<T>(url: string, body: any): Observable<T> {
+    let accessURL = this.constUtil.getBaseURL() + url;
+    console.log(
+      'patch url access >> ' + accessURL + ' >> body' + JSON.stringify(body)
+    );
+    let observable = this._httpClient.patch<T>(
+      accessURL,
+      body,
+      this.getOption()
+    );
+    return observable;
+  }
   upload(url: string, params: any, file: File): Observable<any> {
     let paramsStr: string = '';
     let hasParam: boolean = false;
@@ -362,7 +506,6 @@ export class ConnService {
     let observable = this._httpClient.post(accessURL, fd, options);
     return observable;
   }
-
   getDownloadfileURL(downloadfileName: string): string {
     let paramsStr: string = '';
     let url = '/api/v1/downloadfile';
@@ -385,6 +528,76 @@ export class ConnService {
 
     let accessURL = this.constUtil.getBaseURL() + url + paramsStr;
     return accessURL;
+  }
+
+  oldFile(url: string, params?: any): void {
+    let accessURL =
+      this.constUtil.getBaseURL() +
+      url +
+      '?SourcePage=' +
+      params.SourcePage +
+      '&FileName=' +
+      params.FileName;
+    console.log(this.getDate() + '>>get url access = ' + accessURL);
+    let observable = this._httpClient.get<any>(accessURL, this.getOption(true));
+    observable.subscribe((data) => {
+      const blob = new Blob([data.body], { type: data.body.type });
+      if (window.navigator.msSaveBlob) {
+        window.navigator.msSaveBlob(blob, params.OldFileName);
+      } else {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const fileName = params.OldFileName;
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+      }
+    });
+  }
+
+  olddownloadFile(url: string, params?: any): void {
+    let paramsStr: string = '';
+    let hasParam: boolean = false;
+    if (params) {
+      let paramCount = 0;
+      for (let key in params) {
+        hasParam = true;
+        paramCount += 1;
+        if (paramCount === 1) {
+          paramsStr += key + '=' + params[key];
+        } else {
+          paramsStr += '&' + key + '=' + params[key];
+        }
+      }
+      if (hasParam) {
+        paramsStr = '?' + paramsStr;
+      }
+    }
+
+    let accessURL = this.constUtil.getBaseURL() + url + paramsStr;
+    console.log(this.getDate() + '>>get url access = ' + accessURL);
+    let observable = this._httpClient.get<any>(accessURL, this.getOption(true));
+    observable.subscribe((data) => {
+      // 下载类型 xls
+      //const contentType = 'application/vnd.ms-excel';
+      const blob = new Blob([data.body], { type: data.body.type });
+      if (window.navigator.msSaveBlob) {
+        window.navigator.msSaveBlob(blob, params.OldFileName);
+      } else {
+        const url = window.URL.createObjectURL(blob);
+        // 打开新窗口方式进行下载
+        //window.open(url);
+        // 以动态创建a标签进行下载
+        const a = document.createElement('a');
+        const fileName = params.OldFileName;
+        a.href = url;
+        // a.download = fileName;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+      }
+    });
   }
 
   downloadFile(url: string, params?: any): void {
@@ -499,10 +712,11 @@ export class ConnService {
   delete(url: string): Observable<any> {
     let accessURL = this.constUtil.getBaseURL() + url;
     let observable = this._httpClient.delete(accessURL, this.getOption());
+    // return observable;
     this.message.remove();
-    this.id = this.message.loading('Test Delect ID Message', {
-      nzDuration: 0,
-    }).messageId;
+    // this.id = this.message.loading(this.SystemWaitMessage, {
+    //     nzDuration: 0,
+    // }).messageId;
     return new Observable((observer: Observer<any>) => {
       observable.subscribe(
         (successRes: any) => {
@@ -529,16 +743,16 @@ export class ConnService {
             this.notification.create(
               'warning',
               'Warning',
-              'Test Delect Warning Message',
+              errorRes.error.MessageEN,
               { nzDuration: 0 }
             );
           } else {
-            this.notification.create(
-              'error',
-              'Error',
-              'Test Delect Error Message',
-              { nzDuration: 0 }
-            );
+            // this.notification.create(
+            //     "error",
+            //     "Error",
+            //     this.SystemErrorMessage,
+            //     { nzDuration: 0 }
+            // );
           }
           observer.complete();
           return;

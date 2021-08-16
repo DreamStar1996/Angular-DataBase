@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ColumnMode, SortType } from '@swimlane/ngx-datatable';
 @Component({
   selector: 'app-ngx-database',
   templateUrl: './ngx-database.component.html',
-  styleUrls: ['./ngx-database.component.scss']
+  styleUrls: ['./ngx-database.component.scss'],
 })
 export class NgxDatabaseComponent implements OnInit {
+  rows = [];
 
-  constructor() { }
+  columns = [{ name: 'Company' }, { name: 'Name' }, { name: 'Gender' }];
 
-  ngOnInit(): void {
-  }
+  ColumnMode = ColumnMode;
+  SortType = SortType;
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }
