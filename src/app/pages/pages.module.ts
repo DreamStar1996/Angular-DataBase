@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgxDatabaseComponent } from './ngx-database/ngx-database.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/welcome' },
+  { path: '', pathMatch: 'full', redirectTo: '/ngx-database' },
   {
-    path: 'welcome',
-    component: WelcomeComponent,
+    path: 'ngx-database',
+    component: NgxDatabaseComponent,
   },
 ];
 
 @NgModule({
-  declarations: [WelcomeComponent],
+  declarations: [NgxDatabaseComponent],
   imports: [RouterModule.forRoot(routes), CommonModule, NgxDatatableModule],
   exports: [RouterModule],
 })
