@@ -72,7 +72,7 @@ export class NgxDatabaseComponent implements OnInit {
 
   fetch(cb: any) {
     const req = new XMLHttpRequest();
-    req.open('GET', `../data/company.json`);
+    req.open('GET', `assets/data/company.json`);
 
     req.onload = () => {
       const data = JSON.parse(req.response);
