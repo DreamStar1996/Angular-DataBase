@@ -46,8 +46,6 @@ export const MY_FORMATS = {
 export class NgxDatabaseComponent implements OnInit {
   rows = [];
 
-  columns = [{ name: 'Company' }, { name: 'Name' }, { name: 'Gender' }];
-
   ColumnMode = ColumnMode;
   SortType = SortType;
 
@@ -72,7 +70,7 @@ export class NgxDatabaseComponent implements OnInit {
 
   fetch(cb: any) {
     const req = new XMLHttpRequest();
-    req.open('GET', `assets/data/company.json`);
+    req.open('GET', `assets/data/100k.json`);
 
     req.onload = () => {
       const data = JSON.parse(req.response);
