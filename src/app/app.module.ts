@@ -9,28 +9,44 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { IconsProviderModule } from './icons-provider.module';
+import { PagesModule } from './pages/pages.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
+
+import {
+  MenuFoldOutline,
+  MenuUnfoldOutline,
+  FormOutline,
+  DashboardOutline,
+} from '@ant-design/icons-angular/icons';
+
+const icons = [
+  MenuFoldOutline,
+  MenuUnfoldOutline,
+  DashboardOutline,
+  FormOutline,
+];
 
 registerLocaleData(zh);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    PagesModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
-    IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    NzIconModule,
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN },
+    { provide: NZ_ICONS, useValue: icons },
+  ],
+  bootstrap: [AppComponent],
+  exports: [NzIconModule],
 })
-export class AppModule { }
+export class AppModule {}
