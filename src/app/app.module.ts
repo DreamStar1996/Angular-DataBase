@@ -1,52 +1,32 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { zh_CN } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import zh from '@angular/common/locales/zh';
+import { AppRoutingModule } from './app-routing.module';
+import { IconsProviderModule } from './icons-provider.module';
+import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { TableDatabaseModule } from './pages/table-database/table-database.module';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
-
-import {
-  MenuFoldOutline,
-  MenuUnfoldOutline,
-  FormOutline,
-  DashboardOutline,
-} from '@ant-design/icons-angular/icons';
-
-const icons = [
-  MenuFoldOutline,
-  MenuUnfoldOutline,
-  DashboardOutline,
-  FormOutline,
-];
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
 
 registerLocaleData(zh);
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
   imports: [
     BrowserModule,
-    TableDatabaseModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    IconsProviderModule,
+    NgZorroAntdModule,
     FormsModule,
-    HttpClientModule,
-    NzLayoutModule,
-    NzMenuModule,
-    NzIconModule,
+    HttpClientModule
   ],
-  providers: [
-    { provide: NZ_I18N, useValue: zh_CN },
-    { provide: NZ_ICONS, useValue: icons },
-  ],
-  bootstrap: [AppComponent],
-  exports: [NzIconModule],
+  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
