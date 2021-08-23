@@ -1,51 +1,32 @@
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { ColumnMode } from '@swimlane/ngx-datatable';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
+import { ColumnMode, SortType } from "@swimlane/ngx-datatable";
 @Component({
-  selector: 'app-ngx-database',
-  templateUrl: './ngx-database.component.html',
-  styleUrls: ['./ngx-database.component.scss'],
+  selector: "app-ngx-database",
+  templateUrl: "./ngx-database.component.html",
+  styleUrls: ["./ngx-database.component.scss"],
 })
 export class NgxDatabaseComponent implements OnInit {
-  @ViewChild('myTable') table: any;
-
-  rows: any[] = [];
-  expanded: any = {};
-  timeout: any;
+  rows = [];
 
   ColumnMode = ColumnMode;
 
-  constructor() {
-    this.fetch((data: any[]) => {
+  constructor() {}
+
+  ngOnInit() {
+    this.fetch((data) => {
       this.rows = data;
     });
   }
 
-  ngOnInit(): void {}
-
-  onPage(event: any) {
-    clearTimeout(this.timeout);
-    this.timeout = setTimeout(() => {
-      console.log('paged!', event);
-    }, 100);
-  }
-
-  fetch(cb: { (data: any[]): void; (arg0: any): void; }) {
+  fetch(cb) {
     const req = new XMLHttpRequest();
-    req.open('GET', `assets/data/100k.json`);
+    req.open("GET", `assets/data/company.json`);
 
     req.onload = () => {
-      cb(JSON.parse(req.response));
+      const data = JSON.parse(req.response);
+      cb(data);
     };
 
     req.send();
-  }
-
-  toggleExpandRow(row: any) {
-    console.log('Toggled Expand Row!', row);
-    this.table.rowDetail.toggleExpandRow(row);
-  }
-
-  onDetailToggle(event: any) {
-    console.log('Detail Toggled', event);
   }
 }
