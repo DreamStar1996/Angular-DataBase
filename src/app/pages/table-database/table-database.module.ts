@@ -31,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes), CommonModule, NgxDatatableModule],
   exports: [RouterModule],
 })
-export class PagesModule {}
+export class TableDatabaseModule {}

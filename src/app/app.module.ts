@@ -9,7 +9,7 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { PagesModule } from './pages/pages.module';
+import { TableDatabaseModule } from './pages/table-database/table-database.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
@@ -34,7 +34,7 @@ registerLocaleData(zh);
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    PagesModule,
+    TableDatabaseModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
