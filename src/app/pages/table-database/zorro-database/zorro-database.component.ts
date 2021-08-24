@@ -6,8 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./zorro-database.component.scss"],
 })
 export class ZorroDatabaseComponent implements OnInit {
-  listOfData: ItemData[] = [];
-  displayData: ItemData[] = [];
+  listOfData: any[] = [];
+  displayData: any[] = [];
   bordered = false;
   loading = false;
   sizeChanger = false;
@@ -28,6 +28,10 @@ export class ZorroDatabaseComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.fetch((data: any[]) => {
+      this.listOfData = data;
+      this.displayData = data;
+    });
     for (let i = 1; i <= 100; i++) {
       this.listOfData.push({
         name: "John Brown",
@@ -40,7 +44,18 @@ export class ZorroDatabaseComponent implements OnInit {
     }
   }
 
-  currentPageDataChange($event: ItemData[]): void {
+  fetch(cb: { (data: any[]): void; (arg0: any): void; }) {
+    const req = new XMLHttpRequest();
+    req.open('GET', `assets/data/100k.json`);
+
+    req.onload = () => {
+      cb(JSON.parse(req.response));
+    };
+
+    req.send();
+  }
+
+  currentPageDataChange($event: any[]): void {
     this.displayData = $event;
     this.refreshStatus();
   }
