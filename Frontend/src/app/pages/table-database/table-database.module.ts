@@ -3,7 +3,9 @@ import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { NgxDatatableModule } from "@swimlane/ngx-datatable";
 import { MatTableModule } from "@angular/material/table";
-import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzTableModule } from "ng-zorro-antd/table";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from "@angular/forms";
 
 import { NgxDatabaseComponent } from "./ngx-database/ngx-database.component";
 import { ZorroDatabaseComponent } from "./zorro-database/zorro-database.component";
@@ -35,7 +37,9 @@ const routes: Routes = [
     CommonModule,
     NgxDatatableModule,
     MatTableModule,
-    NzTableModule
+    NzTableModule,
+    MatInputModule,
+    FormsModule,
   ],
   exports: [RouterModule],
 })
