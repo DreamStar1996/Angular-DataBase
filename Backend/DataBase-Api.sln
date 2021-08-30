@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase-Api", "DataBase-Api\DataBase-Api.csproj", "{B8FAE6BB-160A-419A-9C40-96852C41761A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FAE6BB-160A-419A-9C40-96852C41761A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FAE6BB-160A-419A-9C40-96852C41761A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FAE6BB-160A-419A-9C40-96852C41761A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FAE6BB-160A-419A-9C40-96852C41761A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EC7B13C-2E8B-47C3-A434-002A40C3B830}
+	EndGlobalSection
+EndGlobal
