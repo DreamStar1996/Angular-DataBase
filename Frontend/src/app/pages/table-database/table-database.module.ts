@@ -6,6 +6,10 @@ import { MatTableModule } from "@angular/material/table";
 import { NzTableModule } from "ng-zorro-antd/table";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 
 import { NgxDatabaseComponent } from "./ngx-database/ngx-database.component";
 import { ZorroDatabaseComponent } from "./zorro-database/zorro-database.component";
@@ -40,6 +44,10 @@ const routes: Routes = [
     NzTableModule,
     MatInputModule,
     FormsModule,
+    NzFormModule,
+    NzSwitchModule,
+    NzRadioModule,
+    NzDividerModule
   ],
   exports: [RouterModule],
 })
