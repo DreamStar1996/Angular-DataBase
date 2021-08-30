@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase\\Angular_DataBase.csproj": {}
+    "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase.csproj": {}
   },
   "projects": {
-    "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase\\Angular_DataBase.csproj": {
+    "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase\\Angular_DataBase.csproj",
+        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase.csproj",
         "projectName": "Angular_DataBase",
-        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase\\Angular_DataBase.csproj",
+        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase.csproj",
         "packagesPath": "C:\\Users\\7000020126\\.nuget\\packages\\",
-        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\Angular_DataBase\\obj\\",
+        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\Angular_DataBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
