@@ -8,3 +8,13 @@ D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\DataBase-Model\bin\Debug\n
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.csproj.CoreCompileInputs.cache
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.dll
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.pdb
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\bin\Debug\netcoreapp3.1\DataBase-Model.deps.json
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\bin\Debug\netcoreapp3.1\DataBase-Model.dll
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\bin\Debug\netcoreapp3.1\DataBase-Model.pdb
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\bin\Debug\netcoreapp3.1\DataBase-Model.xml
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.csprojAssemblyReference.cache
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.AssemblyInfoInputs.cache
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.AssemblyInfo.cs
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.csproj.CoreCompileInputs.cache
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.dll
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Model\obj\Debug\netcoreapp3.1\DataBase-Model.pdb

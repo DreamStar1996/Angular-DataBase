@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api\\DataBase-Api.csproj": {}
+    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj": {}
   },
   "projects": {
-    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api\\DataBase-Api.csproj": {
+    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api\\DataBase-Api.csproj",
+        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj",
         "projectName": "DataBase-Api",
-        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api\\DataBase-Api.csproj",
+        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj",
         "packagesPath": "C:\\Users\\7000020126\\.nuget\\packages\\",
-        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api\\obj\\",
+        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\DataBase-Model.csproj": {
-                "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\DataBase-Model.csproj"
+              "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj": {
+                "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\DataBase-Model.csproj": {
+    "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\DataBase-Model.csproj",
+        "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj",
         "projectName": "DataBase-Model",
-        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\DataBase-Model.csproj",
+        "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj",
         "packagesPath": "C:\\Users\\7000020126\\.nuget\\packages\\",
-        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Model\\obj\\",
+        "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
