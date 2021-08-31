@@ -27,7 +27,7 @@ namespace DataBase_Api
         {
             services.AddControllers();
 
-            //注册Swagger服务
+            //启用Swagger服务
             services.AddSwaggerGen();
         }
 
@@ -40,11 +40,11 @@ namespace DataBase_Api
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint($"/swagger/V1/swagger.json","WebApi.Core V1");
-                //设置路径配置
-                c.RoutePrefix = "apidoc";
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint($"/swagger/v1/swagger.json", $"XUnit.Core V1");
+                c.RoutePrefix = string.Empty;     //如果是为空 访问路径就为 根域名/index.html,注意localhost:8001/swagger是访问不到的
+                //路径配置，设置为空，表示直接在根域名（localhost:8001）访问该文件
+                // c.RoutePrefix = "swagger"; // 如果你想换一个路径，直接写名字即可，比如直接写c.RoutePrefix = "swagger"; 则访问路径为 根域名/swagger/index.html
             });
 
             app.UseHttpsRedirection();

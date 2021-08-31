@@ -21,7 +21,7 @@ namespace DataBase_Api.SetUpService
                 {
                     // {ApiName} 定义成全局变量，方便修改
                     Version = "V1",
-                    Title = $"{ApiName} 接口文档——Angular-Database Api",
+                    Title = $"{ApiName} Database接口文档-3.0",
                     Description = $"{ApiName} HTTP API V1",
 
                 });
