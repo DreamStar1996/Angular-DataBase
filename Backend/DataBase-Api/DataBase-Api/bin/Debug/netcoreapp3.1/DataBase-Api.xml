@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataBase-Api</name>
+    </assembly>
+    <members>
+        <member name="T:DataBase_Api.Controllers.BaseController">
+            <summary>
+            自定义路由模板，基类
+            </summary>
+        </member>
+        <member name="T:DataBase_Api.Controllers.UsersController">
+            <summary>
+            用户控制器
+            </summary>
+        </member>
+        <member name="M:DataBase_Api.Controllers.UsersController.Hello">
+            <summary>
+            测试hello World
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataBase_Api.Controllers.UsersController.UsersTestSwagger(DataBase_Model.UsersModel)">
+            <summary>
+            用户实体类测试
+            </summary>
+            <param name="usersModel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
