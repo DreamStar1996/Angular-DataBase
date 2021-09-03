@@ -10,6 +10,7 @@ import { registerLocaleData } from "@angular/common";
 import zh from "@angular/common/locales/zh";
 import { NZ_ICONS } from "ng-zorro-antd";
 import { TableDatabaseModule } from "./pages/table-database/table-database.module"
+import { TableBaseChartsModule } from "./pages/table-base-charts/table-base-charts.module"
 
 registerLocaleData(zh);
 
@@ -35,7 +36,8 @@ const icons = [
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
-    TableDatabaseModule
+    TableDatabaseModule,
+    TableBaseChartsModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN },
