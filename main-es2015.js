@@ -36,6 +36,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ng-charts/ng-charts.component.html":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ng-charts/ng-charts.component.html ***!
+  \******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.html":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.html ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- HTML -->\n<div id=\"chartdiv\"></div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.html":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.html ***!
+  \************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-database/ng-database/ng-database.component.html":
 /*!*******************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-database/ng-database/ng-database.component.html ***!
@@ -395,7 +434,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/locales/zh */ "./node_modules/@angular/common/locales/zh.js");
 /* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/table-database/table-database.module */ "./src/app/pages/table-database/table-database.module.ts");
-/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
+/* harmony import */ var _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/table-base-charts/table-base-charts.module */ "./src/app/pages/table-base-charts/table-base-charts.module.ts");
+/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
+
 
 
 
@@ -411,10 +452,10 @@ __webpack_require__.r(__webpack_exports__);
 Object(_angular_common__WEBPACK_IMPORTED_MODULE_8__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default.a);
 
 const icons = [
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_11__["MenuFoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_11__["MenuUnfoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_11__["DashboardOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_11__["FormOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["MenuFoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["MenuUnfoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["DashboardOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["FormOutline"],
 ];
 let AppModule = class AppModule {
 };
@@ -427,7 +468,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NgZorroAntdModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-            _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__["TableDatabaseModule"]
+            _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__["TableDatabaseModule"],
+            _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__["TableBaseChartsModule"]
         ],
         providers: [
             { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NZ_I18N"], useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["zh_CN"] },
@@ -436,6 +478,308 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.scss":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/ng-charts/ng-charts.component.scss ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL25nLWNoYXJ0cy9uZy1jaGFydHMuY29tcG9uZW50LnNjc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/ng-charts/ng-charts.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: NgChartsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgChartsComponent", function() { return NgChartsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let NgChartsComponent = class NgChartsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+NgChartsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-ng-charts',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./ng-charts.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ng-charts/ng-charts.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./ng-charts.component.scss */ "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.scss")).default]
+    })
+], NgChartsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.scss":
+/*!******************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.scss ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("#chartdiv {\n  width: 100%;\n  height: 500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmd4LWNoYXJ0cy9EOlxcVGVzdF9Qcm9ncmFtXFxBbmd1bGFyLURhdGFCYXNlXFxGcm9udGVuZC9zcmNcXGFwcFxccGFnZXNcXHRhYmxlLWJhc2UtY2hhcnRzXFxuZ3gtY2hhcnRzXFxuZ3gtY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wYWdlcy90YWJsZS1iYXNlLWNoYXJ0cy9uZ3gtY2hhcnRzL25neC1jaGFydHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmd4LWNoYXJ0cy9uZ3gtY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NoYXJ0ZGl2IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA1MDBweDtcclxufSIsIiNjaGFydGRpdiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDUwMHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: NgxChartsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxChartsComponent", function() { return NgxChartsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @amcharts/amcharts4/core */ "./node_modules/@amcharts/amcharts4/core.js");
+/* harmony import */ var _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @amcharts/amcharts4/charts */ "./node_modules/@amcharts/amcharts4/charts.js");
+/* harmony import */ var _amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @amcharts/amcharts4/themes/animated */ "./node_modules/@amcharts/amcharts4/themes/animated.js");
+
+
+/* Imports */
+
+
+
+/* Chart code */
+// Themes begin
+_amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"](_amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_4__["default"]);
+// Themes end
+let NgxChartsComponent = class NgxChartsComponent {
+    constructor() { }
+    ngOnInit() { }
+    ngAfterViewInit() {
+        // Create chart instance
+        let chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("chartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
+        chart.scrollbarX = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["Scrollbar"]();
+        // Add data
+        chart.data = [
+            {
+                country: "USA",
+                visits: 3025,
+            },
+            {
+                country: "China",
+                visits: 1882,
+            },
+            {
+                country: "Japan",
+                visits: 1809,
+            },
+            {
+                country: "Germany",
+                visits: 1322,
+            },
+            {
+                country: "UK",
+                visits: 1122,
+            },
+            {
+                country: "France",
+                visits: 1114,
+            },
+            {
+                country: "India",
+                visits: 984,
+            },
+            {
+                country: "Spain",
+                visits: 711,
+            },
+            {
+                country: "Netherlands",
+                visits: 665,
+            },
+        ];
+        prepareParetoData();
+        function prepareParetoData() {
+            let total = 0;
+            for (var i = 0; i < chart.data.length; i++) {
+                let value = chart.data[i].visits;
+                total += value;
+            }
+            let sum = 0;
+            for (var i = 0; i < chart.data.length; i++) {
+                let value = chart.data[i].visits;
+                sum += value;
+                chart.data[i].pareto = (sum / total) * 100;
+            }
+        }
+        // Create axes
+        let categoryAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CategoryAxis"]());
+        categoryAxis.dataFields.category = "country";
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.renderer.minGridDistance = 60;
+        categoryAxis.tooltip.disabled = true;
+        let valueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+        valueAxis.renderer.minWidth = 50;
+        valueAxis.min = 0;
+        valueAxis.cursorTooltipEnabled = false;
+        // Create series
+        let series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ColumnSeries"]());
+        series.sequencedInterpolation = true;
+        series.dataFields.valueY = "visits";
+        series.dataFields.categoryX = "country";
+        series.tooltipText = "[{categoryX}: bold]{valueY}[/]";
+        series.columns.template.strokeWidth = 0;
+        series.tooltip.pointerOrientation = "vertical";
+        series.columns.template.column.cornerRadiusTopLeft = 10;
+        series.columns.template.column.cornerRadiusTopRight = 10;
+        series.columns.template.column.fillOpacity = 0.8;
+        // on hover, make corner radiuses bigger
+        let hoverState = series.columns.template.column.states.create("hover");
+        hoverState.properties.cornerRadiusTopLeft = 0;
+        hoverState.properties.cornerRadiusTopRight = 0;
+        hoverState.properties.fillOpacity = 1;
+        series.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+        });
+        let paretoValueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+        paretoValueAxis.renderer.opposite = true;
+        paretoValueAxis.min = 0;
+        paretoValueAxis.max = 100;
+        paretoValueAxis.strictMinMax = true;
+        paretoValueAxis.renderer.grid.template.disabled = true;
+        paretoValueAxis.numberFormatter = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["NumberFormatter"]();
+        paretoValueAxis.numberFormatter.numberFormat = "#'%'";
+        paretoValueAxis.cursorTooltipEnabled = false;
+        let paretoSeries = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LineSeries"]());
+        paretoSeries.dataFields.valueY = "pareto";
+        paretoSeries.dataFields.categoryX = "country";
+        paretoSeries.yAxis = paretoValueAxis;
+        paretoSeries.tooltipText = "pareto: {valueY.formatNumber('#.0')}%[/]";
+        paretoSeries.bullets.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CircleBullet"]());
+        paretoSeries.strokeWidth = 2;
+        paretoSeries.stroke = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["InterfaceColorSet"]().getFor("alternativeBackground");
+        paretoSeries.strokeOpacity = 0.5;
+        // Cursor
+        chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYCursor"]();
+        chart.cursor.behavior = "panX";
+    }
+};
+NgxChartsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "app-ngx-charts",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./ngx-charts.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./ngx-charts.component.scss */ "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.scss")).default]
+    })
+], NgxChartsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/table-base-charts.module.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/table-base-charts.module.ts ***!
+  \*********************************************************************/
+/*! exports provided: TableBaseChartsModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TableBaseChartsModule", function() { return TableBaseChartsModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ngx-charts/ngx-charts.component */ "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.ts");
+/* harmony import */ var _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ng-charts/ng-charts.component */ "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.ts");
+/* harmony import */ var _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./zorro-charts/zorro-charts.component */ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.ts");
+
+
+
+
+
+
+
+const routes = [
+    {
+        path: "ngx-charts",
+        component: _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__["NgxChartsComponent"],
+    },
+    {
+        path: "zorro-charts",
+        component: _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__["ZorroChartsComponent"],
+    },
+    {
+        path: "ng-charts",
+        component: _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgChartsComponent"],
+    },
+];
+let TableBaseChartsModule = class TableBaseChartsModule {
+};
+TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__["NgxChartsComponent"], _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgChartsComponent"], _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__["ZorroChartsComponent"]],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
+    })
+], TableBaseChartsModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.scss":
+/*!**********************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.scss ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL3pvcnJvLWNoYXJ0cy96b3Jyby1jaGFydHMuY29tcG9uZW50LnNjc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: ZorroChartsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZorroChartsComponent", function() { return ZorroChartsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ZorroChartsComponent = class ZorroChartsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ZorroChartsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-zorro-charts',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./zorro-charts.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./zorro-charts.component.scss */ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.scss")).default]
+    })
+], ZorroChartsComponent);
 
 
 
