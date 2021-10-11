@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+
+interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
-  selector: 'app-form-list',
-  templateUrl: './form-list.component.html',
-  styleUrls: ['./form-list.component.scss']
+  selector: "app-form-list",
+  templateUrl: "./form-list.component.html",
+  styleUrls: ["./form-list.component.scss"],
 })
 export class FormListComponent implements OnInit {
+  selectedValue: string;
 
-  constructor() { }
+  foods: Food[] = [
+    { value: "steak-0", viewValue: "Steak" },
+    { value: "pizza-1", viewValue: "Pizza" },
+    { value: "tacos-2", viewValue: "Tacos" },
+  ];
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }
