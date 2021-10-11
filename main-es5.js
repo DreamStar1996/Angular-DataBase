@@ -35,7 +35,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nz-layout class=\"app-layout\">\n  <nz-sider\n    class=\"menu-sidebar\"\n    nzCollapsible\n    nzWidth=\"256px\"\n    nzBreakpoint=\"md\"\n    [(nzCollapsed)]=\"isCollapsed\"\n    [nzTrigger]=\"null\"\n  >\n    <div class=\"sidebar-logo\">\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\n      <h1>Angular DataBase Charts</h1>\n    </div>\n    <ul\n      nz-menu\n      nzTheme=\"dark\"\n      nzMode=\"inline\"\n      [nzInlineCollapsed]=\"isCollapsed\"\n    >\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"dashboard\">\n        <ul>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"ngx-database\">Ngx Database</a>\n          </li>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"zorro-database\">Zorro Database</a>\n          </li>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"ng-database\">Ng Database</a>\n          </li>\n        </ul>\n      </li>\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"form\">\n        <ul>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\n          </li>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\n          </li>\n          <li nz-menu-item nzMatchRouter>\n            <a routerLink=\"ng-charts\">Ng Charts</a>\n          </li>\n        </ul>\n      </li>\n    </ul>\n  </nz-sider>\n  <nz-layout>\n    <nz-header>\n      <div class=\"app-header\">\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\n          <i\n            class=\"trigger\"\n            nz-icon\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\n          ></i>\n        </span>\n      </div>\n    </nz-header>\n    <nz-content>\n      <div class=\"inner-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </nz-content>\n  </nz-layout>\n</nz-layout>\n";
+    __webpack_exports__["default"] = "<nz-layout class=\"app-layout\">\r\n  <nz-sider\r\n    class=\"menu-sidebar\"\r\n    nzCollapsible\r\n    nzWidth=\"256px\"\r\n    nzBreakpoint=\"md\"\r\n    [(nzCollapsed)]=\"isCollapsed\"\r\n    [nzTrigger]=\"null\"\r\n  >\r\n    <div class=\"sidebar-logo\">\r\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\r\n      <h1>Angular DataBase Charts</h1>\r\n    </div>\r\n    <ul\r\n      nz-menu\r\n      nzTheme=\"dark\"\r\n      nzMode=\"inline\"\r\n      [nzInlineCollapsed]=\"isCollapsed\"\r\n    >\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"dashboard\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-database\">Ngx Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-database\">Zorro Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-database\">Ng Database</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"form\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-charts\">Ng Charts</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </nz-sider>\r\n  <nz-layout>\r\n    <nz-header>\r\n      <div class=\"app-header\">\r\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\r\n          <i\r\n            class=\"trigger\"\r\n            nz-icon\r\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\r\n          ></i>\r\n        </span>\r\n      </div>\r\n    </nz-header>\r\n    <nz-content>\r\n      <div class=\"inner-content\">\r\n        <router-outlet></router-outlet>\r\n      </div>\r\n    </nz-content>\r\n  </nz-layout>\r\n</nz-layout>\r\n";
     /***/
   },
 
@@ -47,7 +47,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "";
+    __webpack_exports__["default"] = "<div>\r\n    <div>\r\n        <mat-grid-list cols=\"2\" rowHeight=\"2:1.4\">\r\n            <mat-grid-tile>\r\n                <div id=\"Onechartdiv\"></div>\r\n            </mat-grid-tile>\r\n            <mat-grid-tile>\r\n                <div id=\"Twochartdiv\"></div>\r\n            </mat-grid-tile>\r\n            <mat-grid-tile>\r\n                <div id=\"Threechartdiv\"></div>\r\n            </mat-grid-tile>\r\n            <mat-grid-tile>\r\n                <div id=\"Fourchartdiv\"></div>\r\n            </mat-grid-tile>\r\n        </mat-grid-list>\r\n    </div>\r\n    <div>\r\n        <div id=\"Fivechartdiv\"></div>\r\n    </div>\r\n</div>";
     /***/
   },
 
@@ -59,7 +59,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- HTML -->\n<div id=\"chartdiv\"></div>";
+    __webpack_exports__["default"] = "<!-- HTML -->\n<div>\n    <div id=\"Onechartdiv\"></div>\n    <br>\n    <div id=\"Twochartdiv\"></div>\n</div>";
     /***/
   },
 
@@ -715,7 +715,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ":host {\n  display: flex;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.app-layout {\n  height: 100vh;\n}\n\n.menu-sidebar {\n  position: relative;\n  z-index: 10;\n  min-height: 100vh;\n  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);\n}\n\n.header-trigger {\n  height: 64px;\n  padding: 20px 24px;\n  font-size: 20px;\n  cursor: pointer;\n  transition: all 0.3s, padding 0s;\n}\n\n.trigger:hover {\n  color: #1890ff;\n}\n\n.sidebar-logo {\n  position: relative;\n  height: 64px;\n  padding-left: 24px;\n  overflow: hidden;\n  line-height: 64px;\n  background: #001529;\n  transition: all 0.3s;\n}\n\n.sidebar-logo img {\n  display: inline-block;\n  height: 32px;\n  width: 32px;\n  vertical-align: middle;\n}\n\n.sidebar-logo h1 {\n  display: inline-block;\n  margin: 0 0 0 20px;\n  color: #fff;\n  font-weight: 600;\n  font-size: 14px;\n  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;\n  vertical-align: middle;\n}\n\nnz-header {\n  padding: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.app-header {\n  position: relative;\n  height: 64px;\n  padding: 0;\n  background: #fff;\n  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);\n}\n\nnz-content {\n  margin: 24px;\n}\n\n.inner-content {\n  padding: 24px;\n  background: #fff;\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFRlc3RfUHJvZ3JhbVxcQW5ndWxhci1EYXRhQmFzZVxcRnJvbnRlbmQvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQ0FBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxXQUFBO0VBQ0EsaUJBQUE7RUFDQSwyQ0FBQTtBQ0NGOztBREVBO0VBQ0UsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtBQ0NGOztBREVBO0VBQ0UscUJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQ0Y7O0FERUE7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlFQUFBO0VBQ0Esc0JBQUE7QUNDRjs7QURFQTtFQUNFLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLGdCQUFBO0VBQ0EsMkNBQUE7QUNDRjs7QURFQTtFQUNFLFlBQUE7QUNDRjs7QURFQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbi5hcHAtbGF5b3V0IHtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm1lbnUtc2lkZWJhciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTA7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBib3gtc2hhZG93OiAycHggMCA2cHggcmdiYSgwLDIxLDQxLC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIC4zcyxwYWRkaW5nIDBzO1xufVxuXG4udHJpZ2dlcjpob3ZlciB7XG4gIGNvbG9yOiAjMTg5MGZmO1xufVxuXG4uc2lkZWJhci1sb2dvIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbGluZS1oZWlnaHQ6IDY0cHg7XG4gIGJhY2tncm91bmQ6ICMwMDE1Mjk7XG4gIHRyYW5zaXRpb246IGFsbCAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsSGVsdmV0aWNhIE5ldWUsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbm56LWhlYWRlciB7XG4gIHBhZGRpbmc6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICB6LWluZGV4OiAyO1xufVxuXG4uYXBwLWhlYWRlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiA2NHB4O1xuICBwYWRkaW5nOiAwO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBib3gtc2hhZG93OiAwIDFweCA0cHggcmdiYSgwLDIxLDQxLC4wOCk7XG59XG5cbm56LWNvbnRlbnQge1xuICBtYXJnaW46IDI0cHg7XG59XG5cbi5pbm5lci1jb250ZW50IHtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVMZWdpYmlsaXR5O1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuLmFwcC1sYXlvdXQge1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4ubWVudS1zaWRlYmFyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAxMDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGJveC1zaGFkb3c6IDJweCAwIDZweCByZ2JhKDAsIDIxLCA0MSwgMC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MsIHBhZGRpbmcgMHM7XG59XG5cbi50cmlnZ2VyOmhvdmVyIHtcbiAgY29sb3I6ICMxODkwZmY7XG59XG5cbi5zaWRlYmFyLWxvZ28ge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBsaW5lLWhlaWdodDogNjRweDtcbiAgYmFja2dyb3VuZDogIzAwMTUyOTtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsIEhlbHZldGljYSBOZXVlLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG5uei1oZWFkZXIge1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgei1pbmRleDogMjtcbn1cblxuLmFwcC1oZWFkZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm94LXNoYWRvdzogMCAxcHggNHB4IHJnYmEoMCwgMjEsIDQxLCAwLjA4KTtcbn1cblxubnotY29udGVudCB7XG4gIG1hcmdpbjogMjRweDtcbn1cblxuLmlubmVyLWNvbnRlbnQge1xuICBwYWRkaW5nOiAyNHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBoZWlnaHQ6IDEwMCU7XG59Il19 */";
+    __webpack_exports__["default"] = ":host {\n  display: flex;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.app-layout {\n  height: 100vh;\n}\n\n.menu-sidebar {\n  position: relative;\n  z-index: 10;\n  min-height: 100vh;\n  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);\n}\n\n.header-trigger {\n  height: 64px;\n  padding: 20px 24px;\n  font-size: 20px;\n  cursor: pointer;\n  transition: all 0.3s, padding 0s;\n}\n\n.trigger:hover {\n  color: #1890ff;\n}\n\n.sidebar-logo {\n  position: relative;\n  height: 64px;\n  padding-left: 24px;\n  overflow: hidden;\n  line-height: 64px;\n  background: #001529;\n  transition: all 0.3s;\n}\n\n.sidebar-logo img {\n  display: inline-block;\n  height: 32px;\n  width: 32px;\n  vertical-align: middle;\n}\n\n.sidebar-logo h1 {\n  display: inline-block;\n  margin: 0 0 0 20px;\n  color: #fff;\n  font-weight: 600;\n  font-size: 14px;\n  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;\n  vertical-align: middle;\n}\n\nnz-header {\n  padding: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.app-header {\n  position: relative;\n  height: 64px;\n  padding: 0;\n  background: #fff;\n  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);\n}\n\nnz-content {\n  margin: 24px;\n}\n\n.inner-content {\n  padding: 24px;\n  background: #fff;\n  height: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFRlc3RfUHJvZ3JhbVxcQW5ndWxhci1EYXRhQmFzZVxcRnJvbnRlbmQvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQ0FBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxXQUFBO0VBQ0EsaUJBQUE7RUFDQSwyQ0FBQTtBQ0NGOztBREVBO0VBQ0UsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtBQ0NGOztBREVBO0VBQ0UscUJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQ0Y7O0FERUE7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlFQUFBO0VBQ0Esc0JBQUE7QUNDRjs7QURFQTtFQUNFLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLGdCQUFBO0VBQ0EsMkNBQUE7QUNDRjs7QURFQTtFQUNFLFlBQUE7QUNDRjs7QURFQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbi5hcHAtbGF5b3V0IHtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm1lbnUtc2lkZWJhciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTA7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBib3gtc2hhZG93OiAycHggMCA2cHggcmdiYSgwLDIxLDQxLC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIC4zcyxwYWRkaW5nIDBzO1xufVxuXG4udHJpZ2dlcjpob3ZlciB7XG4gIGNvbG9yOiAjMTg5MGZmO1xufVxuXG4uc2lkZWJhci1sb2dvIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbGluZS1oZWlnaHQ6IDY0cHg7XG4gIGJhY2tncm91bmQ6ICMwMDE1Mjk7XG4gIHRyYW5zaXRpb246IGFsbCAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsSGVsdmV0aWNhIE5ldWUsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbm56LWhlYWRlciB7XG4gIHBhZGRpbmc6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICB6LWluZGV4OiAyO1xufVxuXG4uYXBwLWhlYWRlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiA2NHB4O1xuICBwYWRkaW5nOiAwO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBib3gtc2hhZG93OiAwIDFweCA0cHggcmdiYSgwLDIxLDQxLC4wOCk7XG59XG5cbm56LWNvbnRlbnQge1xuICBtYXJnaW46IDI0cHg7XG59XG5cbi5pbm5lci1jb250ZW50IHtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVMZWdpYmlsaXR5O1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuLmFwcC1sYXlvdXQge1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4ubWVudS1zaWRlYmFyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAxMDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGJveC1zaGFkb3c6IDJweCAwIDZweCByZ2JhKDAsIDIxLCA0MSwgMC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MsIHBhZGRpbmcgMHM7XG59XG5cbi50cmlnZ2VyOmhvdmVyIHtcbiAgY29sb3I6ICMxODkwZmY7XG59XG5cbi5zaWRlYmFyLWxvZ28ge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBsaW5lLWhlaWdodDogNjRweDtcbiAgYmFja2dyb3VuZDogIzAwMTUyOTtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsIEhlbHZldGljYSBOZXVlLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG5uei1oZWFkZXIge1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgei1pbmRleDogMjtcbn1cblxuLmFwcC1oZWFkZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm94LXNoYWRvdzogMCAxcHggNHB4IHJnYmEoMCwgMjEsIDQxLCAwLjA4KTtcbn1cblxubnotY29udGVudCB7XG4gIG1hcmdpbjogMjRweDtcbn1cblxuLmlubmVyLWNvbnRlbnQge1xuICBwYWRkaW5nOiAyNHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBoZWlnaHQ6IGF1dG87XG59Il19 */";
     /***/
   },
 
@@ -885,7 +885,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL25nLWNoYXJ0cy9uZy1jaGFydHMuY29tcG9uZW50LnNjc3MifQ== */";
+    __webpack_exports__["default"] = "mat-grid-tile {\n  background: lightblue;\n}\n\n#Onechartdiv {\n  width: 100%;\n  height: 600px;\n}\n\n#Twochartdiv {\n  width: 100%;\n  height: 600px;\n}\n\n#Threechartdiv {\n  width: 100%;\n  height: 600px;\n}\n\n#Fourchartdiv {\n  width: 100%;\n  height: 600px;\n}\n\n#Fivechartdiv {\n  width: 100%;\n  height: 600px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmctY2hhcnRzL0Q6XFxUZXN0X1Byb2dyYW1cXEFuZ3VsYXItRGF0YUJhc2VcXEZyb250ZW5kL3NyY1xcYXBwXFxwYWdlc1xcdGFibGUtYmFzZS1jaGFydHNcXG5nLWNoYXJ0c1xcbmctY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wYWdlcy90YWJsZS1iYXNlLWNoYXJ0cy9uZy1jaGFydHMvbmctY2hhcnRzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQUE7QUNDRjs7QURFQTtFQUNFLFdBQUE7RUFDQSxhQUFBO0FDQ0Y7O0FERUE7RUFDRSxXQUFBO0VBQ0EsYUFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLGFBQUE7QUNDRjs7QURFQTtFQUNFLFdBQUE7RUFDQSxhQUFBO0FDQ0Y7O0FERUE7RUFDRSxXQUFBO0VBQ0EsYUFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmctY2hhcnRzL25nLWNoYXJ0cy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIm1hdC1ncmlkLXRpbGUge1xyXG4gIGJhY2tncm91bmQ6IGxpZ2h0Ymx1ZTtcclxufVxyXG5cclxuI09uZWNoYXJ0ZGl2IHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDYwMHB4O1xyXG59XHJcblxyXG4jVHdvY2hhcnRkaXYge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogNjAwcHg7XHJcbn1cclxuXHJcbiNUaHJlZWNoYXJ0ZGl2IHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDYwMHB4O1xyXG59XHJcblxyXG4jRm91cmNoYXJ0ZGl2IHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDYwMHB4O1xyXG59XHJcblxyXG4jRml2ZWNoYXJ0ZGl2IHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDYwMHB4O1xyXG59XHJcbiIsIm1hdC1ncmlkLXRpbGUge1xuICBiYWNrZ3JvdW5kOiBsaWdodGJsdWU7XG59XG5cbiNPbmVjaGFydGRpdiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDYwMHB4O1xufVxuXG4jVHdvY2hhcnRkaXYge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA2MDBweDtcbn1cblxuI1RocmVlY2hhcnRkaXYge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA2MDBweDtcbn1cblxuI0ZvdXJjaGFydGRpdiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDYwMHB4O1xufVxuXG4jRml2ZWNoYXJ0ZGl2IHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogNjAwcHg7XG59Il19 */";
     /***/
   },
 
@@ -912,6 +912,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @amcharts/amcharts4/core */
+    "./node_modules/@amcharts/amcharts4/core.js");
+    /* harmony import */
+
+
+    var _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @amcharts/amcharts4/charts */
+    "./node_modules/@amcharts/amcharts4/charts.js");
+    /* harmony import */
+
+
+    var _amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @amcharts/amcharts4/themes/animated */
+    "./node_modules/@amcharts/amcharts4/themes/animated.js");
+    /* Imports */
+
+    /* Chart code */
+    // Themes begin
+
+
+    _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"](_amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
     var NgChartsComponent = /*#__PURE__*/function () {
       function NgChartsComponent() {
@@ -920,14 +945,426 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(NgChartsComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.Onechartdiv();
+          this.Twochartdiv();
+          this.Threechartdiv();
+          this.Fourchartdiv();
+          this.Fivechartdiv();
+        }
+      }, {
+        key: "Onechartdiv",
+        value: function Onechartdiv() {
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Onechartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarChart"]);
+
+          chart.data = [{
+            country: "USA",
+            visits: 2025
+          }, {
+            country: "China",
+            visits: 1882
+          }, {
+            country: "Japan",
+            visits: 1809
+          }, {
+            country: "Germany",
+            visits: 1322
+          }, {
+            country: "UK",
+            visits: 1122
+          }, {
+            country: "France",
+            visits: 1114
+          }, {
+            country: "India",
+            visits: 984
+          }, {
+            country: "Spain",
+            visits: 711
+          }, {
+            country: "Netherlands",
+            visits: 665
+          }, {
+            country: "Russia",
+            visits: 580
+          }, {
+            country: "South Korea",
+            visits: 443
+          }, {
+            country: "Canada",
+            visits: 441
+          }];
+          chart.innerRadius = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["percent"](40);
+          var categoryAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CategoryAxis"]());
+          categoryAxis.renderer.grid.template.location = 0;
+          categoryAxis.dataFields.category = "country";
+          categoryAxis.renderer.minGridDistance = 60;
+          categoryAxis.renderer.inversed = true;
+          categoryAxis.renderer.labels.template.location = 0.5;
+          categoryAxis.renderer.grid.template.strokeOpacity = 0.08;
+          var valueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis.min = 0;
+          valueAxis.extraMax = 0.1;
+          valueAxis.renderer.grid.template.strokeOpacity = 0.08;
+          chart.seriesContainer.zIndex = -10;
+          var series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarColumnSeries"]());
+          series.dataFields.categoryX = "country";
+          series.dataFields.valueY = "visits";
+          series.tooltipText = "{valueY.value}";
+          series.columns.template.strokeOpacity = 0;
+          series.columns.template.radarColumn.cornerRadius = 5;
+          series.columns.template.radarColumn.innerCornerRadius = 0;
+          chart.zoomOutButton.disabled = true; // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+
+          series.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+          });
+          setInterval(function () {
+            _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["array"].each(chart.data, function (item) {
+              item.visits *= Math.random() * 0.5 + 0.5;
+              item.visits += 10;
+            });
+
+            chart.invalidateRawData();
+          }, 2000);
+          categoryAxis.sortBySeries = series;
+          chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarCursor"]();
+          chart.cursor.behavior = "none";
+          chart.cursor.lineX.disabled = true;
+          chart.cursor.lineY.disabled = true;
+        }
+      }, {
+        key: "Twochartdiv",
+        value: function Twochartdiv() {
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Twochartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
+
+          chart.padding(40, 40, 40, 40);
+          var categoryAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CategoryAxis"]());
+          categoryAxis.renderer.grid.template.location = 0;
+          categoryAxis.dataFields.category = "network";
+          categoryAxis.renderer.minGridDistance = 1;
+          categoryAxis.renderer.inversed = true;
+          categoryAxis.renderer.grid.template.disabled = true;
+          var valueAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis.min = 0;
+          var series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ColumnSeries"]());
+          series.dataFields.categoryY = "network";
+          series.dataFields.valueX = "MAU";
+          series.tooltipText = "{valueX.value}";
+          series.columns.template.strokeOpacity = 0;
+          series.columns.template.column.cornerRadiusBottomRight = 5;
+          series.columns.template.column.cornerRadiusTopRight = 5;
+          var labelBullet = series.bullets.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LabelBullet"]());
+          labelBullet.label.horizontalCenter = "left";
+          labelBullet.label.dx = 10;
+          labelBullet.label.text = "{values.valueX.workingValue.formatNumber('#.0as')}";
+          labelBullet.locationX = 1; // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+
+          series.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+          });
+          categoryAxis.sortBySeries = series;
+          chart.data = [{
+            network: "Facebook",
+            MAU: 2255250000
+          }, {
+            network: "Google+",
+            MAU: 430000000
+          }, {
+            network: "Instagram",
+            MAU: 1000000000
+          }, {
+            network: "Pinterest",
+            MAU: 246500000
+          }, {
+            network: "Reddit",
+            MAU: 355000000
+          }, {
+            network: "TikTok",
+            MAU: 500000000
+          }, {
+            network: "Tumblr",
+            MAU: 624000000
+          }, {
+            network: "Twitter",
+            MAU: 329500000
+          }, {
+            network: "WeChat",
+            MAU: 1000000000
+          }, {
+            network: "Weibo",
+            MAU: 431000000
+          }, {
+            network: "Whatsapp",
+            MAU: 1433333333
+          }, {
+            network: "YouTube",
+            MAU: 1900000000
+          }];
+        }
+      }, {
+        key: "Threechartdiv",
+        value: function Threechartdiv() {
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Threechartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
+
+          chart.data = [{
+            country: "USA",
+            visits: 2025
+          }, {
+            country: "China",
+            visits: 1882
+          }, {
+            country: "Japan",
+            visits: 1809
+          }, {
+            country: "Germany",
+            visits: 1322
+          }, {
+            country: "UK",
+            visits: 1122
+          }, {
+            country: "France",
+            visits: 1114
+          }, {
+            country: "India",
+            visits: 984
+          }, {
+            country: "Spain",
+            visits: 711
+          }, {
+            country: "Netherlands",
+            visits: 665
+          }, {
+            country: "Russia",
+            visits: 580
+          }, {
+            country: "South Korea",
+            visits: 443
+          }, {
+            country: "Canada",
+            visits: 441
+          }];
+          chart.padding(40, 40, 40, 40);
+          var categoryAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CategoryAxis"]());
+          categoryAxis.renderer.grid.template.location = 0;
+          categoryAxis.dataFields.category = "country";
+          categoryAxis.renderer.minGridDistance = 60;
+          categoryAxis.renderer.inversed = true;
+          categoryAxis.renderer.grid.template.disabled = true;
+          var valueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis.min = 0;
+          valueAxis.extraMax = 0.1; //valueAxis.rangeChangeEasing = am4core.ease.linear;
+          //valueAxis.rangeChangeDuration = 1500;
+
+          var series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ColumnSeries"]());
+          series.dataFields.categoryX = "country";
+          series.dataFields.valueY = "visits";
+          series.tooltipText = "{valueY.value}";
+          series.columns.template.strokeOpacity = 0;
+          series.columns.template.column.cornerRadiusTopRight = 10;
+          series.columns.template.column.cornerRadiusTopLeft = 10; //series.interpolationDuration = 1500;
+          //series.interpolationEasing = am4core.ease.linear;
+
+          var labelBullet = series.bullets.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LabelBullet"]());
+          labelBullet.label.verticalCenter = "bottom";
+          labelBullet.label.dy = -10;
+          labelBullet.label.text = "{values.valueY.workingValue.formatNumber('#.')}";
+          chart.zoomOutButton.disabled = true; // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+
+          series.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+          });
+          setInterval(function () {
+            _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["array"].each(chart.data, function (item) {
+              item.visits += Math.round(Math.random() * 200 - 100);
+              item.visits = Math.abs(item.visits);
+            });
+
+            chart.invalidateRawData();
+          }, 2000);
+          categoryAxis.sortBySeries = series;
+        }
+      }, {
+        key: "Fourchartdiv",
+        value: function Fourchartdiv() {
+          // Create chart instance
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Fourchartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarChart"]); // Add data
+
+
+          chart.data = [{
+            category: "Research",
+            value: 80,
+            full: 100
+          }, {
+            category: "Marketing",
+            value: 35,
+            full: 100
+          }, {
+            category: "Distribution",
+            value: 92,
+            full: 100
+          }, {
+            category: "Human Resources",
+            value: 68,
+            full: 100
+          }]; // Make chart not full circle
+
+          chart.startAngle = -90;
+          chart.endAngle = 180;
+          chart.innerRadius = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["percent"](20); // Set number format
+
+          chart.numberFormatter.numberFormat = "#.#'%'"; // Create axes
+
+          var categoryAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["CategoryAxis"]());
+          categoryAxis.dataFields.category = "category";
+          categoryAxis.renderer.grid.template.location = 0;
+          categoryAxis.renderer.grid.template.strokeOpacity = 0;
+          categoryAxis.renderer.labels.template.horizontalCenter = "right"; //categoryAxis.renderer.labels.template.fontWeight = 500;
+
+          categoryAxis.renderer.labels.template.adapter.add("fill", function (fill, target) {
+            return target.dataItem.index >= 0 ? chart.colors.getIndex(target.dataItem.index) : fill;
+          });
+          categoryAxis.renderer.minGridDistance = 10;
+          var valueAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis.renderer.grid.template.strokeOpacity = 0;
+          valueAxis.min = 0;
+          valueAxis.max = 100;
+          valueAxis.strictMinMax = true; // Create series
+
+          var series1 = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarColumnSeries"]());
+          series1.dataFields.valueX = "full";
+          series1.dataFields.categoryY = "category";
+          series1.clustered = false;
+          series1.columns.template.fill = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["InterfaceColorSet"]().getFor("alternativeBackground");
+          series1.columns.template.fillOpacity = 0.08; //series1.columns.template.cornerRadiusTopLeft = 20;
+
+          series1.columns.template.strokeWidth = 0;
+          series1.columns.template.radarColumn.cornerRadius = 20;
+          var series2 = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarColumnSeries"]());
+          series2.dataFields.valueX = "value";
+          series2.dataFields.categoryY = "category";
+          series2.clustered = false;
+          series2.columns.template.strokeWidth = 0;
+          series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
+          series2.columns.template.radarColumn.cornerRadius = 20;
+          series2.columns.template.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+          }); // Add cursor
+
+          chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["RadarCursor"]();
+        }
+      }, {
+        key: "Fivechartdiv",
+        value: function Fivechartdiv() {
+          // create chart
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Fivechartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["TreeMap"]);
+
+          chart.hiddenState.properties.opacity = 0; // this makes initial fade in effect
+
+          chart.data = [{
+            name: "First",
+            children: [{
+              name: "A1",
+              value: 100
+            }, {
+              name: "A2",
+              value: 60
+            }, {
+              name: "A3",
+              value: 30
+            }]
+          }, {
+            name: "Second",
+            children: [{
+              name: "B1",
+              value: 135
+            }, {
+              name: "B2",
+              value: 98
+            }, {
+              name: "B3",
+              value: 56
+            }]
+          }, {
+            name: "Third",
+            children: [{
+              name: "C1",
+              value: 335
+            }, {
+              name: "C2",
+              value: 148
+            }, {
+              name: "C3",
+              value: 126
+            }, {
+              name: "C4",
+              value: 26
+            }]
+          }, {
+            name: "Fourth",
+            children: [{
+              name: "D1",
+              value: 415
+            }, {
+              name: "D2",
+              value: 148
+            }, {
+              name: "D3",
+              value: 89
+            }, {
+              name: "D4",
+              value: 64
+            }, {
+              name: "D5",
+              value: 16
+            }]
+          }, {
+            name: "Fifth",
+            children: [{
+              name: "E1",
+              value: 687
+            }, {
+              name: "E2",
+              value: 148
+            }]
+          }];
+          chart.colors.step = 2; // define data fields
+
+          chart.dataFields.value = "value";
+          chart.dataFields.name = "name";
+          chart.dataFields.children = "children";
+          chart.zoomable = false;
+          var bgColor = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["InterfaceColorSet"]().getFor("background"); // level 0 series template
+
+          var level0SeriesTemplate = chart.seriesTemplates.create("0");
+          var level0ColumnTemplate = level0SeriesTemplate.columns.template;
+          level0ColumnTemplate.column.cornerRadius(10, 10, 10, 10);
+          level0ColumnTemplate.fillOpacity = 0;
+          level0ColumnTemplate.strokeWidth = 4;
+          level0ColumnTemplate.strokeOpacity = 0; // level 1 series template
+
+          var level1SeriesTemplate = chart.seriesTemplates.create("1");
+          var level1ColumnTemplate = level1SeriesTemplate.columns.template;
+          level1SeriesTemplate.tooltip.animationDuration = 0;
+          level1SeriesTemplate.strokeOpacity = 1;
+          level1ColumnTemplate.column.cornerRadius(10, 10, 10, 10);
+          level1ColumnTemplate.fillOpacity = 1;
+          level1ColumnTemplate.strokeWidth = 4;
+          level1ColumnTemplate.stroke = bgColor;
+          var bullet1 = level1SeriesTemplate.bullets.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LabelBullet"]());
+          bullet1.locationY = 0.5;
+          bullet1.locationX = 0.5;
+          bullet1.label.text = "{name}";
+          bullet1.label.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#ffffff");
+          chart.maxLevels = 2;
+        }
       }]);
 
       return NgChartsComponent;
     }();
 
     NgChartsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-ng-charts',
+      selector: "app-ng-charts",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./ng-charts.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/ng-charts/ng-charts.component.html"))["default"],
@@ -946,7 +1383,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "#chartdiv {\n  width: 100%;\n  height: 500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmd4LWNoYXJ0cy9EOlxcVGVzdF9Qcm9ncmFtXFxBbmd1bGFyLURhdGFCYXNlXFxGcm9udGVuZC9zcmNcXGFwcFxccGFnZXNcXHRhYmxlLWJhc2UtY2hhcnRzXFxuZ3gtY2hhcnRzXFxuZ3gtY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wYWdlcy90YWJsZS1iYXNlLWNoYXJ0cy9uZ3gtY2hhcnRzL25neC1jaGFydHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmd4LWNoYXJ0cy9uZ3gtY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NoYXJ0ZGl2IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiA1MDBweDtcclxufSIsIiNjaGFydGRpdiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDUwMHB4O1xufSJdfQ== */";
+    __webpack_exports__["default"] = "#Onechartdiv {\n  width: 100%;\n  height: 500px;\n}\n\n#Twochartdiv {\n  width: 100%;\n  height: 500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvbmd4LWNoYXJ0cy9EOlxcVGVzdF9Qcm9ncmFtXFxBbmd1bGFyLURhdGFCYXNlXFxGcm9udGVuZC9zcmNcXGFwcFxccGFnZXNcXHRhYmxlLWJhc2UtY2hhcnRzXFxuZ3gtY2hhcnRzXFxuZ3gtY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wYWdlcy90YWJsZS1iYXNlLWNoYXJ0cy9uZ3gtY2hhcnRzL25neC1jaGFydHMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0NKOztBREVBO0VBQ0ksV0FBQTtFQUNBLGFBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL25neC1jaGFydHMvbmd4LWNoYXJ0cy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNPbmVjaGFydGRpdiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNTAwcHg7XHJcbn1cclxuXHJcbiNUd29jaGFydGRpdiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNTAwcHg7XHJcbn0iLCIjT25lY2hhcnRkaXYge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1MDBweDtcbn1cblxuI1R3b2NoYXJ0ZGl2IHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogNTAwcHg7XG59Il19 */";
     /***/
   },
 
@@ -1007,12 +1444,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(NgxChartsComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.Onechartdiv();
+          this.Twochartdiv();
+        }
       }, {
-        key: "ngAfterViewInit",
-        value: function ngAfterViewInit() {
+        key: "Onechartdiv",
+        value: function Onechartdiv() {
           // Create chart instance
-          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("chartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Onechartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
 
           chart.scrollbarX = new _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["Scrollbar"](); // Add data
 
@@ -1114,6 +1554,80 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYCursor"]();
           chart.cursor.behavior = "panX";
         }
+      }, {
+        key: "Twochartdiv",
+        value: function Twochartdiv() {
+          // Create chart instance
+          var chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["create"]("Twochartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChart"]);
+
+          var data = [];
+          var price1 = 1000,
+              price2 = 1200;
+          var quantity = 30000;
+
+          for (var i = 0; i < 360; i++) {
+            price1 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+            data.push({
+              date1: new Date(2015, 0, i),
+              price1: price1
+            });
+          }
+
+          for (var i = 0; i < 360; i++) {
+            price2 += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 100);
+            data.push({
+              date2: new Date(2017, 0, i),
+              price2: price2
+            });
+          }
+
+          chart.data = data;
+          var dateAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["DateAxis"]());
+          dateAxis.renderer.grid.template.location = 0;
+          dateAxis.renderer.labels.template.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#e59165");
+          var dateAxis2 = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["DateAxis"]());
+          dateAxis2.renderer.grid.template.location = 0;
+          dateAxis2.renderer.labels.template.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#dfcc64");
+          var valueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis.tooltip.disabled = true;
+          valueAxis.renderer.labels.template.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#e59165");
+          valueAxis.renderer.minWidth = 60;
+          var valueAxis2 = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["ValueAxis"]());
+          valueAxis2.tooltip.disabled = true;
+          valueAxis2.renderer.labels.template.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#dfcc64");
+          valueAxis2.renderer.minWidth = 60;
+          valueAxis2.syncWithAxis = valueAxis;
+          var series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LineSeries"]());
+          series.name = "2015";
+          series.dataFields.dateX = "date1";
+          series.dataFields.valueY = "price1";
+          series.tooltipText = "{valueY.value}";
+          series.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#e59165");
+          series.stroke = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#e59165"); //series.strokeWidth = 3;
+
+          var series2 = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["LineSeries"]());
+          series2.name = "2017";
+          series2.dataFields.dateX = "date2";
+          series2.dataFields.valueY = "price2";
+          series2.yAxis = valueAxis2;
+          series2.xAxis = dateAxis2;
+          series2.tooltipText = "{valueY.value}";
+          series2.fill = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#dfcc64");
+          series2.stroke = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_2__["color"]("#dfcc64"); //series2.strokeWidth = 3;
+
+          chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYCursor"]();
+          chart.cursor.xAxis = dateAxis2;
+          var scrollbarX = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["XYChartScrollbar"]();
+          scrollbarX.series.push(series);
+          chart.scrollbarX = scrollbarX;
+          chart.legend = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_3__["Legend"]();
+          chart.legend.parent = chart.plotContainer;
+          chart.legend.zIndex = 100;
+          valueAxis2.renderer.grid.template.strokeOpacity = 0.07;
+          dateAxis2.renderer.grid.template.strokeOpacity = 0.07;
+          dateAxis.renderer.grid.template.strokeOpacity = 0.07;
+          valueAxis.renderer.grid.template.strokeOpacity = 0.07;
+        }
       }]);
 
       return NgxChartsComponent;
@@ -1169,31 +1683,37 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/material/grid-list */
+    "./node_modules/@angular/material/esm2015/grid-list.js");
+    /* harmony import */
+
+
+    var _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./ngx-charts/ngx-charts.component */
     "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.ts");
     /* harmony import */
 
 
-    var _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./ng-charts/ng-charts.component */
     "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.ts");
     /* harmony import */
 
 
-    var _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./zorro-charts/zorro-charts.component */
     "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.ts");
 
     var routes = [{
       path: "ngx-charts",
-      component: _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__["NgxChartsComponent"]
+      component: _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgxChartsComponent"]
     }, {
       path: "zorro-charts",
-      component: _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__["ZorroChartsComponent"]
+      component: _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__["ZorroChartsComponent"]
     }, {
       path: "ng-charts",
-      component: _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgChartsComponent"]
+      component: _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__["NgChartsComponent"]
     }];
 
     var TableBaseChartsModule = function TableBaseChartsModule() {
@@ -1201,8 +1721,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      declarations: [_ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_4__["NgxChartsComponent"], _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgChartsComponent"], _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_6__["ZorroChartsComponent"]],
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]],
+      declarations: [_ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgxChartsComponent"], _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__["NgChartsComponent"], _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__["ZorroChartsComponent"]],
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"]],
       exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
     })], TableBaseChartsModule);
     /***/
