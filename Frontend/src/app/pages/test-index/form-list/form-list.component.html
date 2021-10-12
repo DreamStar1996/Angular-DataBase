@@ -21,7 +21,7 @@
     <form>
         <mat-form-field>
             <mat-label>Head Status</mat-label>
-            <mat-select [(ngModel)]="HeadStatus" [ngModelOptions]="{ standalone: true }" multiple>
+            <mat-select [(ngModel)]="HeadStatus" [ngModelOptions]="{ standalone: true }" multiple (selectionChange)="headchange($event.value)">
                 <mat-button-toggle-group #headgroup="matButtonToggleGroup" name="fooddata" aria-label="Font Style" (change)="headselect(headgroup.value)">
                     <mat-button-toggle value="SelectAll">SelectAll</mat-button-toggle>
                     <mat-button-toggle value="CancelAll">CancelAll</mat-button-toggle>

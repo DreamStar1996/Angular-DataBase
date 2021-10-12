@@ -32,7 +32,7 @@ export class FormListComponent implements OnInit {
 
   foodselect(value) {
     if (value == "SelectAll") {
-      this.FoodData = this.mat();
+      this.FoodData = this.foodmat();
       return;
     }
     if (value == "CancelAll") {
@@ -42,11 +42,27 @@ export class FormListComponent implements OnInit {
     debugger;
   }
 
-  headselect(value){
-
+  headselect(value) {
+    if (value == "SelectAll") {
+      this.HeadData = [];
+      return;
+    }
+    if (value == "CancelAll") {
+      this.HeadData = [];
+      return;
+    }
+    debugger;
   }
 
-  mat() {
+  headchange(value) {
+    console.log("-----test select value-----", value);
+    for (let i = 0; i <= value.length; i++) {
+      this.HeadData = value[i++];
+    }
+    console.log("-----this.HeadData-----", this.HeadData);
+  }
+
+  foodmat() {
     let all = [];
     this.foods.forEach((x) => {
       all.push(x.value);
@@ -54,5 +70,4 @@ export class FormListComponent implements OnInit {
     debugger;
     return all;
   }
-  
 }
