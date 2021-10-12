@@ -2,12 +2,40 @@
     <form>
         <mat-form-field appearance="fill">
             <mat-label>Favorite food</mat-label>
-            <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-select [(ngModel)]="selectedValue" name="food" multiple>
+                <mat-button-toggle-group [(ngModel)]="Food" aria-label="Font Style">
+                    <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
+                    <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
+                </mat-button-toggle-group>
                 <mat-option *ngFor="let food of foods" [value]="food.value">
                     {{food.viewValue}}
                 </mat-option>
             </mat-select>
         </mat-form-field>
         <p> Selected food: {{selectedValue}} </p>
+        <p> Chosen value is {{Food}} </p>
+    </form>
+</mat-card>
+&nbsp;
+<mat-card>
+    <form>
+        <mat-form-field floatLabel="always" appearance="outline" fxFlex="33" class="mr-12">
+            <mat-label>Head Status</mat-label>
+            <mat-select [(ngModel)]="HeadStatus" [ngModelOptions]="{ standalone: true }" multiple>
+                <mat-button-toggle-group [(ngModel)]="Head" aria-label="Font Style">
+                    <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
+                    <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
+                </mat-button-toggle-group>
+                <mat-option value="待审批">待审批</mat-option>
+                <mat-option value="已审批">已审批</mat-option>
+                <mat-option value="附件已收取">附件已收取</mat-option>
+                <mat-option value="财务已审核">财务已审核</mat-option>
+                <mat-option value="支付处理中">支付处理中</mat-option>
+                <mat-option value="待收付">待收付</mat-option>
+                <mat-option value="支付已结清">支付已结清</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p> Selected Head Status: {{HeadStatus}} </p>
+        <p> Chosen value is {{Head}} </p>
     </form>
 </mat-card>

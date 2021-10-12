@@ -13,6 +13,10 @@ interface Food {
 export class FormListComponent implements OnInit {
   selectedValue: string;
 
+  HeadStatus: string;
+  Head?: string;
+  Food?: string;
+
   foods: Food[] = [
     { value: "steak-0", viewValue: "Steak" },
     { value: "pizza-1", viewValue: "Pizza" },
