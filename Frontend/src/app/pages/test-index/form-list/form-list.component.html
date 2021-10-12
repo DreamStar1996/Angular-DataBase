@@ -2,30 +2,26 @@
     <form>
         <mat-form-field>
             <mat-label>Favorite food</mat-label>
-            <mat-select [(ngModel)]="selectedValue" multiple>
-                <mat-button-toggle-group [(ngModel)]="Foodvalue" aria-label="Font Style">
-                    <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
-                    <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
-                </mat-button-toggle-group>
+            <mat-select [(ngModel)]="FoodData" name="food" multiple>
+                <mat-button-toggle-group #group="matButtonToggleGroup" name="fooddata" aria-label="Font Style" (change)="foodselect(group.value)">
+                    <mat-button-toggle value="SelectAll">SelectAll</mat-button-toggle>
+                    <mat-button-toggle value="CancelAll">CancelAll</mat-button-toggle>
+                  </mat-button-toggle-group>
                 <mat-option *ngFor="let food of foods" [value]="food.value">
                     {{food.viewValue}}
                 </mat-option>
             </mat-select>
         </mat-form-field>
-        <p> Selected food: {{selectedValue}} </p>
-        <p> Chosen value is {{Food}} </p>
+        <p> Selected food: {{FoodData}} </p>
+        <p> Selected Status : {{group.value}}</p>
     </form>
 </mat-card>
 &nbsp;
 <mat-card>
     <form>
-        <mat-form-field floatLabel="always" appearance="outline" fxFlex="33" class="mr-12">
+        <mat-form-field>
             <mat-label>Head Status</mat-label>
             <mat-select [(ngModel)]="HeadStatus" [ngModelOptions]="{ standalone: true }" multiple>
-                <mat-button-toggle-group [(ngModel)]="Headvalue" aria-label="Font Style">
-                    <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
-                    <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
-                </mat-button-toggle-group>
                 <mat-option value="待审批">待审批</mat-option>
                 <mat-option value="已审批">已审批</mat-option>
                 <mat-option value="附件已收取">附件已收取</mat-option>
@@ -36,6 +32,6 @@
             </mat-select>
         </mat-form-field>
         <p> Selected Head Status: {{HeadStatus}} </p>
-        <p> Chosen value is {{Head}} </p>
+        <p> Selected Status : {{group.value}}</p>
     </form>
 </mat-card>

@@ -11,11 +11,13 @@ interface Food {
   styleUrls: ["./form-list.component.scss"],
 })
 export class FormListComponent implements OnInit {
-  selectedValue: string;
+  FoodData = [];
 
+  FoodStatus: string;
   HeadStatus: string;
-  Headvalue?: string;
-  Foodvalue?: string;
+
+  FoodValue: string;
+  HeadValue: string;
 
   foods: Food[] = [
     { value: "steak-0", viewValue: "Steak" },
@@ -26,4 +28,30 @@ export class FormListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  foodselect(value) {
+    if (value == "SelectAll") {
+      this.FoodData = this.mat();
+      return;
+    }
+    if (value == "CancelAll") {
+      this.FoodData = [];
+      return;
+    }
+    debugger;
+  }
+
+  headselect(value){
+    
+  }
+
+  mat() {
+    let all = [];
+    this.foods.forEach((x) => {
+      all.push(x.value);
+    });
+    debugger;
+    return all;
+  }
+  
 }
