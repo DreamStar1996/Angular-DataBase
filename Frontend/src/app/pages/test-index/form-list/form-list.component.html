@@ -1,9 +1,9 @@
 <mat-card>
     <form>
-        <mat-form-field appearance="fill">
+        <mat-form-field>
             <mat-label>Favorite food</mat-label>
-            <mat-select [(ngModel)]="selectedValue" name="food" multiple>
-                <mat-button-toggle-group [(ngModel)]="Food" aria-label="Font Style">
+            <mat-select [(ngModel)]="selectedValue" multiple>
+                <mat-button-toggle-group [(ngModel)]="Foodvalue" aria-label="Font Style">
                     <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
                     <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
                 </mat-button-toggle-group>
@@ -22,7 +22,7 @@
         <mat-form-field floatLabel="always" appearance="outline" fxFlex="33" class="mr-12">
             <mat-label>Head Status</mat-label>
             <mat-select [(ngModel)]="HeadStatus" [ngModelOptions]="{ standalone: true }" multiple>
-                <mat-button-toggle-group [(ngModel)]="Head" aria-label="Font Style">
+                <mat-button-toggle-group [(ngModel)]="Headvalue" aria-label="Font Style">
                     <mat-button-toggle value="SelectAll">Select All</mat-button-toggle>
                     <mat-button-toggle value="CancelAll">Cancel All</mat-button-toggle>
                 </mat-button-toggle-group>

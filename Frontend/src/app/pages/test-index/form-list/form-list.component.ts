@@ -14,8 +14,8 @@ export class FormListComponent implements OnInit {
   selectedValue: string;
 
   HeadStatus: string;
-  Head?: string;
-  Food?: string;
+  Headvalue?: string;
+  Foodvalue?: string;
 
   foods: Food[] = [
     { value: "steak-0", viewValue: "Steak" },
