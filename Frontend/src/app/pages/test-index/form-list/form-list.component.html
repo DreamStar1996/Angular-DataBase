@@ -2,8 +2,8 @@
     <form>
         <mat-form-field>
             <mat-label>Favorite food</mat-label>
-            <mat-select [(ngModel)]="FoodData" name="food" multiple>
-                <mat-button-toggle-group #foodgroup="matButtonToggleGroup" name="fooddata" aria-label="Font Style" (change)="foodselect(foodgroup.value)">
+            <mat-select [(ngModel)]="FoodData" [ngModelOptions]="{ standalone: true }" multiple>
+                <mat-button-toggle-group #foodgroup="matButtonToggleGroup" aria-label="Font Style" (change)="foodselect(foodgroup.value)">
                     <mat-button-toggle value="SelectAll">SelectAll</mat-button-toggle>
                     <mat-button-toggle value="CancelAll">CancelAll</mat-button-toggle>
                   </mat-button-toggle-group>

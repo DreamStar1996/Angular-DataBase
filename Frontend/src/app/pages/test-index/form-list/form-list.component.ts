@@ -12,6 +12,7 @@ interface Food {
 })
 export class FormListComponent implements OnInit {
   FoodData = [];
+  HeadData = [];
 
   FoodStatus: string;
   HeadStatus: string;
@@ -42,7 +43,7 @@ export class FormListComponent implements OnInit {
   }
 
   headselect(value){
-    
+
   }
 
   mat() {
