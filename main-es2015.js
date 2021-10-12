@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nz-layout class=\"app-layout\">\r\n  <nz-sider\r\n    class=\"menu-sidebar\"\r\n    nzCollapsible\r\n    nzWidth=\"256px\"\r\n    nzBreakpoint=\"md\"\r\n    [(nzCollapsed)]=\"isCollapsed\"\r\n    [nzTrigger]=\"null\"\r\n  >\r\n    <div class=\"sidebar-logo\">\r\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\r\n      <h1>Angular DataBase Charts</h1>\r\n    </div>\r\n    <ul\r\n      nz-menu\r\n      nzTheme=\"dark\"\r\n      nzMode=\"inline\"\r\n      [nzInlineCollapsed]=\"isCollapsed\"\r\n    >\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"dashboard\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-database\">Ngx Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-database\">Zorro Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-database\">Ng Database</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"form\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-charts\">Ng Charts</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </nz-sider>\r\n  <nz-layout>\r\n    <nz-header>\r\n      <div class=\"app-header\">\r\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\r\n          <i\r\n            class=\"trigger\"\r\n            nz-icon\r\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\r\n          ></i>\r\n        </span>\r\n      </div>\r\n    </nz-header>\r\n    <nz-content>\r\n      <div class=\"inner-content\">\r\n        <router-outlet></router-outlet>\r\n      </div>\r\n    </nz-content>\r\n  </nz-layout>\r\n</nz-layout>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nz-layout class=\"app-layout\">\r\n  <nz-sider\r\n    class=\"menu-sidebar\"\r\n    nzCollapsible\r\n    nzWidth=\"256px\"\r\n    nzBreakpoint=\"md\"\r\n    [(nzCollapsed)]=\"isCollapsed\"\r\n    [nzTrigger]=\"null\"\r\n  >\r\n    <div class=\"sidebar-logo\">\r\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\r\n      <h1>Angular DataBase Charts</h1>\r\n    </div>\r\n    <ul\r\n      nz-menu\r\n      nzTheme=\"dark\"\r\n      nzMode=\"inline\"\r\n      [nzInlineCollapsed]=\"isCollapsed\"\r\n    >\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"ordered-list\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-database\">Ngx Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-database\">Zorro Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-database\">Ng Database</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"dashboard\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-charts\">Ng Charts</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"Test Index\" nzIcon=\"setting\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"form-test\">Form Test</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </nz-sider>\r\n  <nz-layout>\r\n    <nz-header>\r\n      <div class=\"app-header\">\r\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\r\n          <i\r\n            class=\"trigger\"\r\n            nz-icon\r\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\r\n          ></i>\r\n        </span>\r\n      </div>\r\n    </nz-header>\r\n    <nz-content>\r\n      <div class=\"inner-content\">\r\n        <router-outlet></router-outlet>\r\n      </div>\r\n    </nz-content>\r\n  </nz-layout>\r\n</nz-layout>\r\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("");
+/* harmony default export */ __webpack_exports__["default"] = ("<form nz-form [formGroup]=\"validateForm\" class=\"ant-advanced-search-form\">\r\n    <div nz-row [nzGutter]=\"24\">\r\n        <div nz-col [nzSpan]=\"8\" *ngFor=\"let control of controlArray\" [hidden]=\"!control.show\">\r\n            <nz-form-item nzFlex>\r\n                <nz-form-label [nzFor]=\"'field' + control.index\">Field {{ control.index }}</nz-form-label>\r\n                <nz-form-control>\r\n                    <input nz-input placeholder=\"placeholder\" [formControlName]=\"'field' + control.index\"\r\n                        [attr.id]=\"'field' + control.index\" />\r\n                </nz-form-control>\r\n            </nz-form-item>\r\n        </div>\r\n    </div>\r\n    <div nz-row>\r\n        <div nz-col [nzSpan]=\"24\" class=\"search-area\">\r\n            <button nz-button [nzType]=\"'primary'\">Search</button>\r\n            <button nz-button (click)=\"resetForm()\">Clear</button>\r\n            <a class=\"collapse\" (click)=\"toggleCollapse()\">\r\n                Collapse\r\n                <i nz-icon [nzType]=\"isCollapse ? 'down' : 'up'\"></i>\r\n            </a>\r\n        </div>\r\n    </div>\r\n</form>\r\n<div class=\"search-result-list\">\r\n    <div id=\"chartdiv\"></div>\r\n</div>");
 
 /***/ }),
 
@@ -111,6 +111,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"components-table-demo-control-bar\">\r\n    <form nz-form nzLayout=\"inline\">\r\n        <nz-form-item>\r\n            <nz-form-label><label>Bordered</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"bordered\" name=\"bordered\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Loading</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"loading\" name=\"loading\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Pagination</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"pagination\" name=\"pagination\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>PageSizeChanger</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"sizeChanger\" name=\"sizeChanger\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Title</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"title\" name=\"title\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Column Header</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"header\" name=\"header\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Footer</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"footer\" name=\"footer\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Expandable</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"expandable\" name=\"expandable\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Checkbox</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"checkbox\" name=\"checkbox\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Fixed Header</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"fixHeader\" name=\"fixHeader\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>No Result</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"noResult\" (ngModelChange)=\"noResultChange($event)\" name=\"noResult\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Simple Pagination</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-switch [(ngModel)]=\"simple\" name=\"simple\"></nz-switch>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Size</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-radio-group [(ngModel)]=\"size\" name=\"size\">\r\n                    <label nz-radio-button nzValue=\"default\">Default</label>\r\n                    <label nz-radio-button nzValue=\"middle\">Middle</label>\r\n                    <label nz-radio-button nzValue=\"small\">Small</label>\r\n                </nz-radio-group>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n        <nz-form-item>\r\n            <nz-form-label><label>Pagination Position</label></nz-form-label>\r\n            <nz-form-control>\r\n                <nz-radio-group [(ngModel)]=\"position\" name=\"position\">\r\n                    <label nz-radio-button nzValue=\"top\">Top</label>\r\n                    <label nz-radio-button nzValue=\"bottom\">Bottom</label>\r\n                    <label nz-radio-button nzValue=\"both\">Both</label>\r\n                </nz-radio-group>\r\n            </nz-form-control>\r\n        </nz-form-item>\r\n    </form>\r\n</div>\r\n<nz-table #dynamicTable [nzScroll]=\"fixHeader ? { y: '240px' } : null\" [nzData]=\"listOfData\" [nzBordered]=\"bordered\" [nzSimple]=\"simple\" [nzLoading]=\"loading\" [nzPaginationPosition]=\"position\" [nzShowSizeChanger]=\"sizeChanger\" [nzFrontPagination]=\"pagination\"\r\n    [nzShowPagination]=\"pagination\" [nzFooter]=\"footer ? 'Here is Footer' : null\" [nzTitle]=\"title ? 'Here is Title' : null\" [nzSize]=\"size\" (nzCurrentPageDataChange)=\"currentPageDataChange($event)\">\r\n    <thead>\r\n        <tr *ngIf=\"header\">\r\n            <th nzWidth=\"50px\" nzShowExpand *ngIf=\"expandable\"></th>\r\n            <th nzWidth=\"62px\" nzShowCheckbox *ngIf=\"checkbox\" [(nzChecked)]=\"allChecked\" [nzIndeterminate]=\"indeterminate\" (nzCheckedChange)=\"checkAll($event)\"></th>\r\n            <th nzWidth=\"150px\">Name</th>\r\n            <th nzWidth=\"70px\">Age</th>\r\n            <th>Address</th>\r\n            <th nzWidth=\"260px\">Action</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <ng-template ngFor let-data [ngForOf]=\"dynamicTable.data\">\r\n            <tr>\r\n                <td nzShowExpand *ngIf=\"expandable\" [(nzExpand)]=\"data.expand\"></td>\r\n                <td nzShowCheckbox *ngIf=\"checkbox\" [(nzChecked)]=\"data.checked\" (nzCheckedChange)=\"refreshStatus()\"></td>\r\n                <td>{{ data.name }}</td>\r\n                <td>{{ data.age }}</td>\r\n                <td>{{ data.address }}</td>\r\n                <td>\r\n                    <a href=\"#\">Action 一 {{ data.name }}</a>\r\n                    <nz-divider nzType=\"vertical\"></nz-divider>\r\n                    <a href=\"#\">Delete</a>\r\n                </td>\r\n            </tr>\r\n            <tr [nzExpand]=\"data.expand && expandable\">\r\n                <td></td>\r\n                <td [attr.colspan]=\"checkbox ? 5 : 4\">{{ data.description }}</td>\r\n            </tr>\r\n        </ng-template>\r\n    </tbody>\r\n</nz-table>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/form-list/form-list.component.html":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/form-list/form-list.component.html ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Favorite food</mat-label>\r\n            <mat-select [(ngModel)]=\"FoodData\" [ngModelOptions]=\"{ standalone: true }\" multiple>\r\n                <mat-button-toggle-group #foodgroup=\"matButtonToggleGroup\" aria-label=\"Font Style\" (change)=\"foodselect(foodgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">SelectAll</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">CancelAll</mat-button-toggle>\r\n                  </mat-button-toggle-group>\r\n                <mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">\r\n                    {{food.viewValue}}\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected food: {{FoodData}} </p>\r\n        <p> Selected Status : {{foodgroup.value}}</p>\r\n    </form>\r\n</mat-card>\r\n&nbsp;\r\n<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Head Status</mat-label>\r\n            <mat-select [(ngModel)]=\"HeadStatus\" [ngModelOptions]=\"{ standalone: true }\" multiple>\r\n                <mat-button-toggle-group #headgroup=\"matButtonToggleGroup\" name=\"fooddata\" aria-label=\"Font Style\" (change)=\"headselect(headgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">SelectAll</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">CancelAll</mat-button-toggle>\r\n                  </mat-button-toggle-group>\r\n                <mat-option value=\"待审批\">待审批</mat-option>\r\n                <mat-option value=\"已审批\">已审批</mat-option>\r\n                <mat-option value=\"附件已收取\">附件已收取</mat-option>\r\n                <mat-option value=\"财务已审核\">财务已审核</mat-option>\r\n                <mat-option value=\"支付处理中\">支付处理中</mat-option>\r\n                <mat-option value=\"待收付\">待收付</mat-option>\r\n                <mat-option value=\"支付已结清\">支付已结清</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected Head Status: {{HeadStatus}} </p>\r\n        <p> Selected Status : {{headgroup.value}}</p>\r\n    </form>\r\n</mat-card>");
 
 /***/ }),
 
@@ -435,7 +448,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/table-database/table-database.module */ "./src/app/pages/table-database/table-database.module.ts");
 /* harmony import */ var _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/table-base-charts/table-base-charts.module */ "./src/app/pages/table-base-charts/table-base-charts.module.ts");
-/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
+/* harmony import */ var _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/test-index/test-index.module */ "./src/app/pages/test-index/test-index.module.ts");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
+
+
 
 
 
@@ -452,10 +469,10 @@ __webpack_require__.r(__webpack_exports__);
 Object(_angular_common__WEBPACK_IMPORTED_MODULE_8__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default.a);
 
 const icons = [
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["MenuFoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["MenuUnfoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["DashboardOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_12__["FormOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["MenuFoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["MenuUnfoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["DashboardOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["FormOutline"],
 ];
 let AppModule = class AppModule {
 };
@@ -469,7 +486,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
             _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__["TableDatabaseModule"],
-            _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__["TableBaseChartsModule"]
+            _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__["TableBaseChartsModule"],
+            _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_12__["TestIndexModule"],
+            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]
         ],
         providers: [
             { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NZ_I18N"], useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["zh_CN"] },
@@ -1249,6 +1268,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ngx-charts/ngx-charts.component */ "./src/app/pages/table-base-charts/ngx-charts/ngx-charts.component.ts");
 /* harmony import */ var _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ng-charts/ng-charts.component */ "./src/app/pages/table-base-charts/ng-charts/ng-charts.component.ts");
 /* harmony import */ var _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./zorro-charts/zorro-charts.component */ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.ts");
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/form */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-form.js");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/input */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-input.js");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/button */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-button.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-grid.js");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-icon.js");
+
+
+
+
+
+
 
 
 
@@ -1276,7 +1307,18 @@ let TableBaseChartsModule = class TableBaseChartsModule {
 TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         declarations: [_ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgxChartsComponent"], _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__["NgChartsComponent"], _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__["ZorroChartsComponent"]],
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes), _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"]],
+        imports: [
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"],
+            ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_8__["NzFormModule"],
+            ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__["NzInputModule"],
+            ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_10__["NzButtonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"],
+            ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_12__["NzGridModule"],
+            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]
+        ],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
     })
 ], TableBaseChartsModule);
@@ -1294,7 +1336,7 @@ TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL3pvcnJvLWNoYXJ0cy96b3Jyby1jaGFydHMuY29tcG9uZW50LnNjc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".ant-advanced-search-form {\n  padding: 24px;\n  background: #fbfbfb;\n  border: 1px solid #d9d9d9;\n  border-radius: 6px;\n}\n\n.search-result-list {\n  margin-top: 16px;\n  border: 1px dashed #e9e9e9;\n  border-radius: 6px;\n  background-color: #fafafa;\n  min-height: 200px;\n  text-align: center;\n  padding-top: 80px;\n}\n\n[nz-form-label] {\n  overflow: visible;\n}\n\nbutton {\n  margin-left: 8px;\n}\n\n.collapse {\n  margin-left: 8px;\n  font-size: 12px;\n}\n\n.search-area {\n  text-align: right;\n}\n\n#chartdiv {\n  width: 100%;\n  height: 500px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGFibGUtYmFzZS1jaGFydHMvem9ycm8tY2hhcnRzL0Q6XFxUZXN0X1Byb2dyYW1cXEFuZ3VsYXItRGF0YUJhc2VcXEZyb250ZW5kL3NyY1xcYXBwXFxwYWdlc1xcdGFibGUtYmFzZS1jaGFydHNcXHpvcnJvLWNoYXJ0c1xcem9ycm8tY2hhcnRzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wYWdlcy90YWJsZS1iYXNlLWNoYXJ0cy96b3Jyby1jaGFydHMvem9ycm8tY2hhcnRzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7RUFDQSwwQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QUNDRjs7QURFQTtFQUNFLGlCQUFBO0FDQ0Y7O0FERUE7RUFDRSxnQkFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7RUFDQSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxpQkFBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtFQUNBLGFBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3RhYmxlLWJhc2UtY2hhcnRzL3pvcnJvLWNoYXJ0cy96b3Jyby1jaGFydHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYW50LWFkdmFuY2VkLXNlYXJjaC1mb3JtIHtcclxuICBwYWRkaW5nOiAyNHB4O1xyXG4gIGJhY2tncm91bmQ6ICNmYmZiZmI7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI2Q5ZDlkOTtcclxuICBib3JkZXItcmFkaXVzOiA2cHg7XHJcbn1cclxuXHJcbi5zZWFyY2gtcmVzdWx0LWxpc3Qge1xyXG4gIG1hcmdpbi10b3A6IDE2cHg7XHJcbiAgYm9yZGVyOiAxcHggZGFzaGVkICNlOWU5ZTk7XHJcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmYWZhZmE7XHJcbiAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHBhZGRpbmctdG9wOiA4MHB4O1xyXG59XHJcblxyXG5bbnotZm9ybS1sYWJlbF0ge1xyXG4gIG92ZXJmbG93OiB2aXNpYmxlO1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gIG1hcmdpbi1sZWZ0OiA4cHg7XHJcbn1cclxuXHJcbi5jb2xsYXBzZSB7XHJcbiAgbWFyZ2luLWxlZnQ6IDhweDtcclxuICBmb250LXNpemU6IDEycHg7XHJcbn1cclxuXHJcbi5zZWFyY2gtYXJlYSB7XHJcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbn1cclxuXHJcbiNjaGFydGRpdiB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiA1MDBweDtcclxufVxyXG4iLCIuYW50LWFkdmFuY2VkLXNlYXJjaC1mb3JtIHtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZDogI2ZiZmJmYjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2Q5ZDlkOTtcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xufVxuXG4uc2VhcmNoLXJlc3VsdC1saXN0IHtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgYm9yZGVyOiAxcHggZGFzaGVkICNlOWU5ZTk7XG4gIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZhZmFmYTtcbiAgbWluLWhlaWdodDogMjAwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZy10b3A6IDgwcHg7XG59XG5cbltuei1mb3JtLWxhYmVsXSB7XG4gIG92ZXJmbG93OiB2aXNpYmxlO1xufVxuXG5idXR0b24ge1xuICBtYXJnaW4tbGVmdDogOHB4O1xufVxuXG4uY29sbGFwc2Uge1xuICBtYXJnaW4tbGVmdDogOHB4O1xuICBmb250LXNpemU6IDEycHg7XG59XG5cbi5zZWFyY2gtYXJlYSB7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuXG4jY2hhcnRkaXYge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1MDBweDtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1310,16 +1352,160 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZorroChartsComponent", function() { return ZorroChartsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @amcharts/amcharts4/core */ "./node_modules/@amcharts/amcharts4/core.js");
+/* harmony import */ var _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @amcharts/amcharts4/charts */ "./node_modules/@amcharts/amcharts4/charts.js");
+/* harmony import */ var _amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @amcharts/amcharts4/themes/animated */ "./node_modules/@amcharts/amcharts4/themes/animated.js");
 
 
+
+/* Imports */
+
+
+
+/* Chart code */
+// Themes begin
+_amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_3__["useTheme"](_amcharts_amcharts4_themes_animated__WEBPACK_IMPORTED_MODULE_5__["default"]);
+// Themes end
 let ZorroChartsComponent = class ZorroChartsComponent {
-    constructor() { }
+    constructor(fb) {
+        this.fb = fb;
+        this.controlArray = [];
+        this.isCollapse = true;
+    }
     ngOnInit() {
+        this.validateForm = this.fb.group({});
+        for (let i = 0; i < 6; i++) {
+            this.controlArray.push({ index: i, show: i < 3 });
+            this.validateForm.addControl(`field${i}`, new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]());
+        }
+        this.Chartdiv();
+    }
+    toggleCollapse() {
+        this.isCollapse = !this.isCollapse;
+        this.controlArray.forEach((c, index) => {
+            c.show = this.isCollapse ? index < 3 : true;
+        });
+    }
+    resetForm() {
+        this.validateForm.reset();
+    }
+    Chartdiv() {
+        // Create chart instance
+        let chart = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_3__["create"]("chartdiv", _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__["XYChart3D"]);
+        // Add data
+        chart.data = [
+            {
+                country: "USA",
+                visits: 4025,
+            },
+            {
+                country: "China",
+                visits: 1882,
+            },
+            {
+                country: "Japan",
+                visits: 1809,
+            },
+            {
+                country: "Germany",
+                visits: 1322,
+            },
+            {
+                country: "UK",
+                visits: 1122,
+            },
+            {
+                country: "France",
+                visits: 1114,
+            },
+            {
+                country: "India",
+                visits: 984,
+            },
+            {
+                country: "Spain",
+                visits: 711,
+            },
+            {
+                country: "Netherlands",
+                visits: 665,
+            },
+            {
+                country: "Russia",
+                visits: 580,
+            },
+            {
+                country: "South Korea",
+                visits: 443,
+            },
+            {
+                country: "Canada",
+                visits: 441,
+            },
+            {
+                country: "Brazil",
+                visits: 395,
+            },
+            {
+                country: "Italy",
+                visits: 386,
+            },
+            {
+                country: "Australia",
+                visits: 384,
+            },
+            {
+                country: "Taiwan",
+                visits: 338,
+            },
+            {
+                country: "Poland",
+                visits: 328,
+            },
+        ];
+        // Create axes
+        let categoryAxis = chart.xAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__["CategoryAxis"]());
+        categoryAxis.dataFields.category = "country";
+        categoryAxis.renderer.labels.template.rotation = 270;
+        categoryAxis.renderer.labels.template.hideOversized = false;
+        categoryAxis.renderer.minGridDistance = 20;
+        categoryAxis.renderer.labels.template.horizontalCenter = "right";
+        categoryAxis.renderer.labels.template.verticalCenter = "middle";
+        categoryAxis.tooltip.label.rotation = 270;
+        categoryAxis.tooltip.label.horizontalCenter = "right";
+        categoryAxis.tooltip.label.verticalCenter = "middle";
+        let valueAxis = chart.yAxes.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__["ValueAxis"]());
+        valueAxis.title.text = "Countries";
+        valueAxis.title.fontWeight = "bold";
+        // Create series
+        let series = chart.series.push(new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__["ColumnSeries3D"]());
+        series.dataFields.valueY = "visits";
+        series.dataFields.categoryX = "country";
+        series.name = "Visits";
+        series.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+        series.columns.template.fillOpacity = 0.8;
+        let columnTemplate = series.columns.template;
+        columnTemplate.strokeWidth = 2;
+        columnTemplate.strokeOpacity = 1;
+        columnTemplate.stroke = _amcharts_amcharts4_core__WEBPACK_IMPORTED_MODULE_3__["color"]("#FFFFFF");
+        columnTemplate.adapter.add("fill", function (fill, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+        });
+        columnTemplate.adapter.add("stroke", function (stroke, target) {
+            return chart.colors.getIndex(target.dataItem.index);
+        });
+        chart.cursor = new _amcharts_amcharts4_charts__WEBPACK_IMPORTED_MODULE_4__["XYCursor"]();
+        chart.cursor.lineX.strokeOpacity = 0;
+        chart.cursor.lineY.strokeOpacity = 0;
     }
 };
+ZorroChartsComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
 ZorroChartsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-zorro-charts',
+        selector: "app-zorro-charts",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./zorro-charts.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./zorro-charts.component.scss */ "./src/app/pages/table-base-charts/zorro-charts/zorro-charts.component.scss")).default]
     })
@@ -1648,6 +1834,133 @@ ZorroDatabaseComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./zorro-database.component.scss */ "./src/app/pages/table-database/zorro-database/zorro-database.component.scss")).default]
     })
 ], ZorroDatabaseComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/test-index/form-list/form-list.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/pages/test-index/form-list/form-list.component.scss ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("mat-button-toggle-group {\n  width: 100%;\n}\nmat-button-toggle-group mat-button-toggle {\n  width: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdGVzdC1pbmRleC9mb3JtLWxpc3QvRDpcXFRlc3RfUHJvZ3JhbVxcQW5ndWxhci1EYXRhQmFzZVxcRnJvbnRlbmQvc3JjXFxhcHBcXHBhZ2VzXFx0ZXN0LWluZGV4XFxmb3JtLWxpc3RcXGZvcm0tbGlzdC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcGFnZXMvdGVzdC1pbmRleC9mb3JtLWxpc3QvZm9ybS1saXN0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBQTtBQ0NGO0FEQUU7RUFDRSxVQUFBO0FDRUoiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy90ZXN0LWluZGV4L2Zvcm0tbGlzdC9mb3JtLWxpc3QuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtYnV0dG9uLXRvZ2dsZS1ncm91cCB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgbWF0LWJ1dHRvbi10b2dnbGUge1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICB9XHJcbn1cclxuIiwibWF0LWJ1dHRvbi10b2dnbGUtZ3JvdXAge1xuICB3aWR0aDogMTAwJTtcbn1cbm1hdC1idXR0b24tdG9nZ2xlLWdyb3VwIG1hdC1idXR0b24tdG9nZ2xlIHtcbiAgd2lkdGg6IDUwJTtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/pages/test-index/form-list/form-list.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/pages/test-index/form-list/form-list.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: FormListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormListComponent", function() { return FormListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FormListComponent = class FormListComponent {
+    constructor() {
+        this.FoodData = [];
+        this.HeadData = [];
+        this.foods = [
+            { value: "steak-0", viewValue: "Steak" },
+            { value: "pizza-1", viewValue: "Pizza" },
+            { value: "tacos-2", viewValue: "Tacos" },
+        ];
+    }
+    ngOnInit() { }
+    foodselect(value) {
+        if (value == "SelectAll") {
+            this.FoodData = this.mat();
+            return;
+        }
+        if (value == "CancelAll") {
+            this.FoodData = [];
+            return;
+        }
+        debugger;
+    }
+    headselect(value) {
+    }
+    mat() {
+        let all = [];
+        this.foods.forEach((x) => {
+            all.push(x.value);
+        });
+        debugger;
+        return all;
+    }
+};
+FormListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "app-form-list",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./form-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/form-list/form-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./form-list.component.scss */ "./src/app/pages/test-index/form-list/form-list.component.scss")).default]
+    })
+], FormListComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/test-index/test-index.module.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/pages/test-index/test-index.module.ts ***!
+  \*******************************************************/
+/*! exports provided: TestIndexModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestIndexModule", function() { return TestIndexModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-list/form-list.component */ "./src/app/pages/test-index/form-list/form-list.component.ts");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm2015/select.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+
+
+
+
+
+
+
+
+
+const routes = [
+    {
+        path: "form-test",
+        component: _form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__["FormListComponent"],
+    },
+];
+let TestIndexModule = class TestIndexModule {
+};
+TestIndexModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [_form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__["FormListComponent"]],
+        imports: [
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
+            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"]
+        ],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
+    })
+], TestIndexModule);
 
 
 
