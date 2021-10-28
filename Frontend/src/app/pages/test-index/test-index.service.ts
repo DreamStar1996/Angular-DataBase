@@ -16,4 +16,14 @@ export class TestIndexService {
     };
     return this.conn.get(addr, params);
   }
+
+  findOrder(searchCond: any): any {
+    console.log("searchCond:" + searchCond.id);
+    let url = "/api/v1/applications/" + searchCond.id;
+    let params: any = {
+      BundleID: searchCond.bundleID,
+      Content: searchCond.content,
+    };
+    return this.conn.post(url, params);
+  }
 }

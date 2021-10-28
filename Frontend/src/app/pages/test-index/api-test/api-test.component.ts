@@ -10,37 +10,30 @@ export class FilterElement {
   styleUrls: ["./api-test.component.scss"],
 })
 export class ApiTestComponent implements OnInit {
-  // dataSet = [
-  //   {
-  //     key: "1",
-  //     name: "John Brown",
-  //     age: 32,
-  //     address: "New York No. 1 Lake Park",
-  //   },
-  //   {
-  //     key: "2",
-  //     name: "Jim Green",
-  //     age: 42,
-  //     address: "London No. 1 Lake Park",
-  //   },
-  //   {
-  //     key: "3",
-  //     name: "Joe Black",
-  //     age: 32,
-  //     address: "Sidney No. 1 Lake Park",
-  //   },
-  // ];
-
   dataSet: any[] = [];
 
   tabledata: FilterElement = new FilterElement();
 
+  searchForm: any;
+
   constructor(private db: TestIndexService) {}
 
   ngOnInit() {
+
+    //get 请求
     this.tabledata.currentUserGID = "7000020126";
     this.db.getReportMenu(this.tabledata).subscribe((x) => {
       this.dataSet = x.data;
     });
+
+    //post 请求
+    let data;
+    let content;
+    this.searchForm = {
+      id: data.applicationId,
+      bundleID: data.bundleID,
+      content: content,
+    };
+    let observable = this.db.findOrder(this.searchForm);
   }
 }
