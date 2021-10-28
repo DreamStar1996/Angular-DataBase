@@ -34,7 +34,6 @@ export class ConnService {
         let hasParam = false
         if (params) {
             let paramCount = 0
-            // tslint:disable-next-line:forin
             for (const key in params) {
                 hasParam = true
                 paramCount += 1
@@ -54,92 +53,35 @@ export class ConnService {
         this.id = this.message.loading('数据加载中。。。', {
             nzDuration: 0,
         }).messageId
-        if (useBlob) {
+        // return observable;
+        return new Observable((observer: Observer<any>) => {
             observable.subscribe(
-                (data) => {
-                    const link = document.createElement('a')
-                    const blob = new Blob([data.body], {
-                        type: 'application/vnd.ms-excel',
-                    })
-                    let fileName = data.headers.get('Content-Disposition').split(';')[1].split('filename=')[1]
-                    const fileNameUnicode = data.headers.get('Content-Disposition').split('filename*=')[1]
-                    if (fileNameUnicode) {
-                        fileName = decodeURIComponent(fileNameUnicode.split("''")[1])
-                    }
-                    link.setAttribute('href', window.URL.createObjectURL(blob))
-                    link.setAttribute('download', fileName)
-                    link.style.visibility = 'hidden'
-                    document.body.appendChild(link)
-                    link.click()
-                    document.body.removeChild(link)
+                (successRes: any) => {
                     this.message.remove()
                     this.message.success('完成！', {
-                        nzDuration: 1500,
+                        nzDuration: 2500,
                     })
+                    observer.next(successRes)
+                    observer.complete()
+                    return
                 },
-                (errres) => {
+                (errorRes: any) => {
                     this.message.remove()
-                    const reader = new FileReader()
-                    reader.readAsText(errres.error)
-
-                    reader.onload = (e: any) => {
-                        // var readResult = e.target.result;
-                        const obj = JSON.parse(<string>e.target.result)
-
-                        if (obj.Code && obj.MessageEN) {
-                            this.notification.create('warning', 'Warning', obj.MessageEN, {
-                                nzDuration: 0,
-                            })
-                        } else {
-                            this.notification.create('error', 'Error', '失败！', {
-                                nzDuration: 0,
-                            })
-                        }
+                    observer.error(errorRes)
+                    if (errorRes.error.Code && errorRes.error.MessageEN) {
+                        this.notification.create('warning', 'Warning', errorRes.error.MessageCN, {
+                            nzDuration: 0,
+                        })
+                    } else {
+                        this.notification.create('error', 'Error', '失败！', {
+                            nzDuration: 0,
+                        })
                     }
+                    observer.complete()
+                    return
                 }
             )
-            return Observable.create((x) => true)
-        } else {
-            // return observable;
-            return new Observable((observer: Observer<any>) => {
-                observable.subscribe(
-                    (successRes: any) => {
-                        this.message.remove()
-                        this.message.success('完成！', {
-                            nzDuration: 2500,
-                        })
-                        observer.next(successRes)
-                        // if (successRes.Code != 0) {
-                        //     this.notification.create(
-                        //         'success',
-                        //         'Message',
-                        //         '启动完毕！',
-                        //         { nzDuration: 0 }
-                        //     );
-                        // }
-                        observer.complete()
-                        return
-                    },
-                    (errorRes: any) => {
-                        this.message.remove()
-                        observer.error(errorRes)
-                        console.log(errorRes.Code)
-                        console.log(errorRes.MessageEN)
-                        if (errorRes.error.Code && errorRes.error.MessageEN) {
-                            this.notification.create('warning', 'Warning', errorRes.error.MessageCN, {
-                                nzDuration: 0,
-                            })
-                        } else {
-                            this.notification.create('error', 'Error', '失败！', {
-                                nzDuration: 0,
-                            })
-                        }
-                        observer.complete()
-                        return
-                    }
-                )
-            })
-        }
+        })
     }
 
     post(url: string, body: any): Observable<any> {
@@ -189,7 +131,6 @@ export class ConnService {
         }
     }
 
-    // tslint:disable-next-line:typedef
     getDate() {
         return this.dateUtil.dateFormat('YYYY-mm-dd HH:MM:SS', new Date())
     }
