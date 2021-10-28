@@ -7,6 +7,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { FormsModule } from "@angular/forms";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { ApiTestComponent } from './api-test/api-test.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [FormListComponent],
+  declarations: [FormListComponent, ApiTestComponent],
   imports: [
     RouterModule.forRoot(routes),
     CommonModule,
