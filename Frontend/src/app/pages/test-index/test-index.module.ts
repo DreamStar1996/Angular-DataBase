@@ -2,18 +2,23 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { FormListComponent } from "./form-list/form-list.component";
+import { ApiTestComponent } from "./api-test/api-test.component";
 
 import { MatSelectModule } from "@angular/material/select";
 import { FormsModule } from "@angular/forms";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
-import { ApiTestComponent } from './api-test/api-test.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 const routes: Routes = [
   {
     path: "form-test",
     component: FormListComponent,
   },
+  {
+    path: "api-test",
+    component: ApiTestComponent,
+  }
 ];
 
 @NgModule({
@@ -24,7 +29,8 @@ const routes: Routes = [
     MatSelectModule,
     FormsModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    NzTableModule
   ],
   exports: [RouterModule],
 })
