@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const baseUrl = 'swagger API 地址';
+const baseUrl = 'https://localhost:5001';
 
 @Injectable({
     providedIn: 'root',

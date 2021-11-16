@@ -10,9 +10,9 @@ export class TestIndexService {
   constructor(private http: HttpClient, public conn: ConnService) {}
 
   getReportMenu(filterpara: any): Observable<any> {
-    const addr = "/Report/GetReportMenu";
+    const addr = "/WeatherForecast";
     const params = {
-      currentUserGID: filterpara.currentUserGID,
+      //currentUserGID: filterpara.currentUserGID,
     };
     return this.conn.get(addr, params);
   }

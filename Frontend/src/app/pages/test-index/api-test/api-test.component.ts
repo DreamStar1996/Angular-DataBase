@@ -23,7 +23,7 @@ export class ApiTestComponent implements OnInit {
     //get 请求
     this.tabledata.currentUserGID = "7000020126";
     this.db.getReportMenu(this.tabledata).subscribe((x) => {
-      this.dataSet = x.data;
+      this.dataSet = x;
     });
 
     //post 请求
