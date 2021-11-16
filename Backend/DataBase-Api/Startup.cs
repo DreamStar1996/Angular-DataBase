@@ -25,8 +25,17 @@ namespace DataBase_Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            //配置跨域处理，允许所有来源
+            services.AddCors(options =>
+            {
+                options.AddPolicy("cors",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                );
+            });
 
+            services.AddControllers();
             //注册Swagger
             services.AddSwaggerGen();
         }
@@ -52,11 +61,16 @@ namespace DataBase_Api
 
             app.UseRouting();
 
+            //允许所有跨域，cors是在ConfigureServices方法中配置的跨域策略名称
+            //注意：UseCors必须放在UseRouting和UseEndpoints之间
+            app.UseCors("cors");
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                //跨域需添加RequireCors方法，cors是在ConfigureServices方法中配置的跨域策略名称
+                endpoints.MapControllers().RequireCors("cors");
             });
         }
     }
