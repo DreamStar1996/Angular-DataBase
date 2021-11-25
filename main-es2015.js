@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nz-layout class=\"app-layout\">\r\n  <nz-sider\r\n    class=\"menu-sidebar\"\r\n    nzCollapsible\r\n    nzWidth=\"256px\"\r\n    nzBreakpoint=\"md\"\r\n    [(nzCollapsed)]=\"isCollapsed\"\r\n    [nzTrigger]=\"null\"\r\n  >\r\n    <div class=\"sidebar-logo\">\r\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\r\n      <h1>Angular DataBase Charts</h1>\r\n    </div>\r\n    <ul\r\n      nz-menu\r\n      nzTheme=\"dark\"\r\n      nzMode=\"inline\"\r\n      [nzInlineCollapsed]=\"isCollapsed\"\r\n    >\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"ordered-list\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-database\">Ngx Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-database\">Zorro Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-database\">Ng Database</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"dashboard\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-charts\">Ng Charts</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"Test Index\" nzIcon=\"setting\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"form-test\">Form Test</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </nz-sider>\r\n  <nz-layout>\r\n    <nz-header>\r\n      <div class=\"app-header\">\r\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\r\n          <i\r\n            class=\"trigger\"\r\n            nz-icon\r\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\r\n          ></i>\r\n        </span>\r\n      </div>\r\n    </nz-header>\r\n    <nz-content>\r\n      <div class=\"inner-content\">\r\n        <router-outlet></router-outlet>\r\n      </div>\r\n    </nz-content>\r\n  </nz-layout>\r\n</nz-layout>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nz-layout class=\"app-layout\">\r\n  <nz-sider\r\n    class=\"menu-sidebar\"\r\n    nzCollapsible\r\n    nzWidth=\"256px\"\r\n    nzBreakpoint=\"md\"\r\n    [(nzCollapsed)]=\"isCollapsed\"\r\n    [nzTrigger]=\"null\"\r\n  >\r\n    <div class=\"sidebar-logo\">\r\n      <img src=\"https://ng.ant.design/assets/img/logo.svg\" alt=\"logo\" />\r\n      <h1>Test Angular DataBase Charts</h1>\r\n    </div>\r\n    <ul\r\n      nz-menu\r\n      nzTheme=\"dark\"\r\n      nzMode=\"inline\"\r\n      [nzInlineCollapsed]=\"isCollapsed\"\r\n    >\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Data\" nzIcon=\"ordered-list\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-database\">Ngx Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-database\">Zorro Database</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-database\">Ng Database</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"TableBase Charts\" nzIcon=\"dashboard\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ngx-charts\">Ngx Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"zorro-charts\">Zorro Charts</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"ng-charts\">Ng Charts</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li nz-submenu nzOpen nzTitle=\"Test Index\" nzIcon=\"setting\">\r\n        <ul>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"form-test\">Form Test</a>\r\n          </li>\r\n          <li nz-menu-item nzMatchRouter>\r\n            <a routerLink=\"api-test\">Api Test</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </nz-sider>\r\n  <nz-layout>\r\n    <nz-header>\r\n      <div class=\"app-header\">\r\n        <span class=\"header-trigger\" (click)=\"isCollapsed = !isCollapsed\">\r\n          <i\r\n            class=\"trigger\"\r\n            nz-icon\r\n            [nzType]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"\r\n          ></i>\r\n        </span>\r\n      </div>\r\n    </nz-header>\r\n    <nz-content>\r\n      <div class=\"inner-content\">\r\n        <router-outlet></router-outlet>\r\n      </div>\r\n    </nz-content>\r\n  </nz-layout>\r\n</nz-layout>\r\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- HTML -->\n<div>\n    <div id=\"Onechartdiv\"></div>\n    <br>\n    <div id=\"Twochartdiv\"></div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- HTML -->\r\n<div>\r\n    <div id=\"Onechartdiv\"></div>\r\n    <br>\r\n    <div id=\"Twochartdiv\"></div>\r\n</div>");
 
 /***/ }),
 
@@ -114,6 +114,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/api-test/api-test.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/api-test/api-test.component.html ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<nz-table #borderedTable nzBordered nzFooter=\"Footer\" nzTitle=\"Header\" [nzData]=\"dataSet\">\n    <thead>\n        <tr>\n            <th>Summary</th>\n            <th>TemperatureC</th>\n            <th>TemperatureF</th>\n            <th>Date</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let data of borderedTable.data\">\n            <td>{{ data.summary }}</td>\n            <td>{{ data.temperatureC }}</td>\n            <td>{{ data.temperatureF }}</td>\n            <td>{{ data.date }}</td>\n        </tr>\n    </tbody>\n</nz-table>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/form-list/form-list.component.html":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/form-list/form-list.component.html ***!
@@ -123,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Favorite food</mat-label>\r\n            <mat-select [(ngModel)]=\"FoodData\" [ngModelOptions]=\"{ standalone: true }\" multiple>\r\n                <mat-button-toggle-group #foodgroup=\"matButtonToggleGroup\" aria-label=\"Font Style\" (change)=\"foodselect(foodgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">SelectAll</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">CancelAll</mat-button-toggle>\r\n                  </mat-button-toggle-group>\r\n                <mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">\r\n                    {{food.viewValue}}\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected food: {{FoodData}} </p>\r\n        <p> Selected Status : {{foodgroup.value}}</p>\r\n    </form>\r\n</mat-card>\r\n&nbsp;\r\n<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Head Status</mat-label>\r\n            <mat-select [(ngModel)]=\"HeadStatus\" [ngModelOptions]=\"{ standalone: true }\" multiple>\r\n                <mat-button-toggle-group #headgroup=\"matButtonToggleGroup\" name=\"fooddata\" aria-label=\"Font Style\" (change)=\"headselect(headgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">SelectAll</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">CancelAll</mat-button-toggle>\r\n                  </mat-button-toggle-group>\r\n                <mat-option value=\"待审批\">待审批</mat-option>\r\n                <mat-option value=\"已审批\">已审批</mat-option>\r\n                <mat-option value=\"附件已收取\">附件已收取</mat-option>\r\n                <mat-option value=\"财务已审核\">财务已审核</mat-option>\r\n                <mat-option value=\"支付处理中\">支付处理中</mat-option>\r\n                <mat-option value=\"待收付\">待收付</mat-option>\r\n                <mat-option value=\"支付已结清\">支付已结清</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected Head Status: {{HeadStatus}} </p>\r\n        <p> Selected Status : {{headgroup.value}}</p>\r\n    </form>\r\n</mat-card>");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Favorite food</mat-label>\r\n            <mat-select [(ngModel)]=\"FoodData\" [ngModelOptions]=\"{ standalone: true }\" multiple>\r\n                <mat-button-toggle-group #foodgroup=\"matButtonToggleGroup\" aria-label=\"Font Style\"\r\n                    (change)=\"foodselect(foodgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">Select All</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">Cancel All</mat-button-toggle>\r\n                </mat-button-toggle-group>\r\n                <mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">\r\n                    {{food.viewValue}}\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected food: {{FoodData}} </p>\r\n        <p> Selected Status : {{foodgroup.value}}</p>\r\n    </form>\r\n</mat-card>\r\n&nbsp;\r\n<mat-card>\r\n    <form>\r\n        <mat-form-field>\r\n            <mat-label>Head Status</mat-label>\r\n            <mat-select [(ngModel)]=\"HeadStatus\" [ngModelOptions]=\"{ standalone: true }\" multiple\r\n                (selectionChange)=\"headchange($event.value)\">\r\n                <mat-button-toggle-group #headgroup=\"matButtonToggleGroup\" name=\"fooddata\" aria-label=\"Font Style\"\r\n                    (change)=\"headselect(headgroup.value)\">\r\n                    <mat-button-toggle value=\"SelectAll\">Select All</mat-button-toggle>\r\n                    <mat-button-toggle value=\"CancelAll\">Cancel All</mat-button-toggle>\r\n                </mat-button-toggle-group>\r\n                <mat-option value=\"待审批\">待审批</mat-option>\r\n                <mat-option value=\"已审批\">已审批</mat-option>\r\n                <mat-option value=\"附件已收取\">附件已收取</mat-option>\r\n                <mat-option value=\"财务已审核\">财务已审核</mat-option>\r\n                <mat-option value=\"支付处理中\">支付处理中</mat-option>\r\n                <mat-option value=\"待收付\">待收付</mat-option>\r\n                <mat-option value=\"支付已结清\">支付已结清</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <p> Selected Head Status: {{HeadStatus}} </p>\r\n        <p> Selected Status : {{headgroup.value}}</p>\r\n    </form>\r\n</mat-card>");
 
 /***/ }),
 
@@ -390,7 +403,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (":host {\n  display: flex;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.app-layout {\n  height: 100vh;\n}\n\n.menu-sidebar {\n  position: relative;\n  z-index: 10;\n  min-height: 100vh;\n  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);\n}\n\n.header-trigger {\n  height: 64px;\n  padding: 20px 24px;\n  font-size: 20px;\n  cursor: pointer;\n  transition: all 0.3s, padding 0s;\n}\n\n.trigger:hover {\n  color: #1890ff;\n}\n\n.sidebar-logo {\n  position: relative;\n  height: 64px;\n  padding-left: 24px;\n  overflow: hidden;\n  line-height: 64px;\n  background: #001529;\n  transition: all 0.3s;\n}\n\n.sidebar-logo img {\n  display: inline-block;\n  height: 32px;\n  width: 32px;\n  vertical-align: middle;\n}\n\n.sidebar-logo h1 {\n  display: inline-block;\n  margin: 0 0 0 20px;\n  color: #fff;\n  font-weight: 600;\n  font-size: 14px;\n  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;\n  vertical-align: middle;\n}\n\nnz-header {\n  padding: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.app-header {\n  position: relative;\n  height: 64px;\n  padding: 0;\n  background: #fff;\n  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);\n}\n\nnz-content {\n  margin: 24px;\n}\n\n.inner-content {\n  padding: 24px;\n  background: #fff;\n  height: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFRlc3RfUHJvZ3JhbVxcQW5ndWxhci1EYXRhQmFzZVxcRnJvbnRlbmQvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQ0FBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxXQUFBO0VBQ0EsaUJBQUE7RUFDQSwyQ0FBQTtBQ0NGOztBREVBO0VBQ0UsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtBQ0NGOztBREVBO0VBQ0UscUJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQ0Y7O0FERUE7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlFQUFBO0VBQ0Esc0JBQUE7QUNDRjs7QURFQTtFQUNFLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLGdCQUFBO0VBQ0EsMkNBQUE7QUNDRjs7QURFQTtFQUNFLFlBQUE7QUNDRjs7QURFQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbi5hcHAtbGF5b3V0IHtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm1lbnUtc2lkZWJhciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTA7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBib3gtc2hhZG93OiAycHggMCA2cHggcmdiYSgwLDIxLDQxLC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIC4zcyxwYWRkaW5nIDBzO1xufVxuXG4udHJpZ2dlcjpob3ZlciB7XG4gIGNvbG9yOiAjMTg5MGZmO1xufVxuXG4uc2lkZWJhci1sb2dvIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbGluZS1oZWlnaHQ6IDY0cHg7XG4gIGJhY2tncm91bmQ6ICMwMDE1Mjk7XG4gIHRyYW5zaXRpb246IGFsbCAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsSGVsdmV0aWNhIE5ldWUsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG5cbm56LWhlYWRlciB7XG4gIHBhZGRpbmc6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICB6LWluZGV4OiAyO1xufVxuXG4uYXBwLWhlYWRlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiA2NHB4O1xuICBwYWRkaW5nOiAwO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBib3gtc2hhZG93OiAwIDFweCA0cHggcmdiYSgwLDIxLDQxLC4wOCk7XG59XG5cbm56LWNvbnRlbnQge1xuICBtYXJnaW46IDI0cHg7XG59XG5cbi5pbm5lci1jb250ZW50IHtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVMZWdpYmlsaXR5O1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuLmFwcC1sYXlvdXQge1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4ubWVudS1zaWRlYmFyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAxMDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGJveC1zaGFkb3c6IDJweCAwIDZweCByZ2JhKDAsIDIxLCA0MSwgMC4zNSk7XG59XG5cbi5oZWFkZXItdHJpZ2dlciB7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMjBweCAyNHB4O1xuICBmb250LXNpemU6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MsIHBhZGRpbmcgMHM7XG59XG5cbi50cmlnZ2VyOmhvdmVyIHtcbiAgY29sb3I6ICMxODkwZmY7XG59XG5cbi5zaWRlYmFyLWxvZ28ge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBsaW5lLWhlaWdodDogNjRweDtcbiAgYmFja2dyb3VuZDogIzAwMTUyOTtcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3M7XG59XG5cbi5zaWRlYmFyLWxvZ28gaW1nIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDMycHg7XG4gIHdpZHRoOiAzMnB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uc2lkZWJhci1sb2dvIGgxIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMCAwIDIwcHg7XG4gIGNvbG9yOiAjZmZmO1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtZmFtaWx5OiBBdmVuaXIsIEhlbHZldGljYSBOZXVlLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG5uei1oZWFkZXIge1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgei1pbmRleDogMjtcbn1cblxuLmFwcC1oZWFkZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGhlaWdodDogNjRweDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm94LXNoYWRvdzogMCAxcHggNHB4IHJnYmEoMCwgMjEsIDQxLCAwLjA4KTtcbn1cblxubnotY29udGVudCB7XG4gIG1hcmdpbjogMjRweDtcbn1cblxuLmlubmVyLWNvbnRlbnQge1xuICBwYWRkaW5nOiAyNHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBoZWlnaHQ6IGF1dG87XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (":host {\n  display: flex;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.app-layout {\n  height: 100vh;\n}\n\n.menu-sidebar {\n  position: relative;\n  z-index: 10;\n  min-height: 100vh;\n  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);\n}\n\n.header-trigger {\n  height: 64px;\n  padding: 20px 24px;\n  font-size: 20px;\n  cursor: pointer;\n  transition: all 0.3s, padding 0s;\n}\n\n.trigger:hover {\n  color: #1890ff;\n}\n\n.sidebar-logo {\n  position: relative;\n  height: 64px;\n  padding-left: 24px;\n  overflow: hidden;\n  line-height: 64px;\n  background: #001529;\n  transition: all 0.3s;\n}\n\n.sidebar-logo img {\n  display: inline-block;\n  height: 32px;\n  width: 32px;\n  vertical-align: middle;\n}\n\n.sidebar-logo h1 {\n  display: inline-block;\n  margin: 0 0 0 20px;\n  color: #fff;\n  font-weight: 600;\n  font-size: 14px;\n  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;\n  vertical-align: middle;\n}\n\nnz-header {\n  padding: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.app-header {\n  position: relative;\n  height: 64px;\n  padding: 0;\n  background: #fff;\n  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);\n}\n\nnz-content {\n  margin: 24px;\n}\n\n.inner-content {\n  padding: 24px;\n  background: #fff;\n  height: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFRlc3RfUHJvZ3JhbVxcQW5ndWxhci1EYXRhQmFzZVxcRnJvbnRlbmQvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQ0FBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxXQUFBO0VBQ0EsaUJBQUE7RUFDQSwyQ0FBQTtBQ0NGOztBREVBO0VBQ0UsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtBQ0NGOztBREVBO0VBQ0UscUJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQ0Y7O0FERUE7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlFQUFBO0VBQ0Esc0JBQUE7QUNDRjs7QURFQTtFQUNFLFVBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLGdCQUFBO0VBQ0EsMkNBQUE7QUNDRjs7QURFQTtFQUNFLFlBQUE7QUNDRjs7QURFQTtFQUNFLGFBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxufVxyXG5cclxuLmFwcC1sYXlvdXQge1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbn1cclxuXHJcbi5tZW51LXNpZGViYXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB6LWluZGV4OiAxMDtcclxuICBtaW4taGVpZ2h0OiAxMDB2aDtcclxuICBib3gtc2hhZG93OiAycHggMCA2cHggcmdiYSgwLDIxLDQxLC4zNSk7XHJcbn1cclxuXHJcbi5oZWFkZXItdHJpZ2dlciB7XHJcbiAgaGVpZ2h0OiA2NHB4O1xyXG4gIHBhZGRpbmc6IDIwcHggMjRweDtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIHRyYW5zaXRpb246IGFsbCAuM3MscGFkZGluZyAwcztcclxufVxyXG5cclxuLnRyaWdnZXI6aG92ZXIge1xyXG4gIGNvbG9yOiAjMTg5MGZmO1xyXG59XHJcblxyXG4uc2lkZWJhci1sb2dvIHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgaGVpZ2h0OiA2NHB4O1xyXG4gIHBhZGRpbmctbGVmdDogMjRweDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIGxpbmUtaGVpZ2h0OiA2NHB4O1xyXG4gIGJhY2tncm91bmQ6ICMwMDE1Mjk7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4zcztcclxufVxyXG5cclxuLnNpZGViYXItbG9nbyBpbWcge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBoZWlnaHQ6IDMycHg7XHJcbiAgd2lkdGg6IDMycHg7XHJcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxufVxyXG5cclxuLnNpZGViYXItbG9nbyBoMSB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIG1hcmdpbjogMCAwIDAgMjBweDtcclxuICBjb2xvcjogI2ZmZjtcclxuICBmb250LXdlaWdodDogNjAwO1xyXG4gIGZvbnQtc2l6ZTogMTRweDtcclxuICBmb250LWZhbWlseTogQXZlbmlyLEhlbHZldGljYSBOZXVlLEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO1xyXG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbn1cclxuXHJcbm56LWhlYWRlciB7XHJcbiAgcGFkZGluZzogMDtcclxuICB3aWR0aDogMTAwJTtcclxuICB6LWluZGV4OiAyO1xyXG59XHJcblxyXG4uYXBwLWhlYWRlciB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIGhlaWdodDogNjRweDtcclxuICBwYWRkaW5nOiAwO1xyXG4gIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgYm94LXNoYWRvdzogMCAxcHggNHB4IHJnYmEoMCwyMSw0MSwuMDgpO1xyXG59XHJcblxyXG5uei1jb250ZW50IHtcclxuICBtYXJnaW46IDI0cHg7XHJcbn1cclxuXHJcbi5pbm5lci1jb250ZW50IHtcclxuICBwYWRkaW5nOiAyNHB4O1xyXG4gIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcbiIsIjpob3N0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbi5hcHAtbGF5b3V0IHtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm1lbnUtc2lkZWJhciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTA7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBib3gtc2hhZG93OiAycHggMCA2cHggcmdiYSgwLCAyMSwgNDEsIDAuMzUpO1xufVxuXG4uaGVhZGVyLXRyaWdnZXIge1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmc6IDIwcHggMjRweDtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHRyYW5zaXRpb246IGFsbCAwLjNzLCBwYWRkaW5nIDBzO1xufVxuXG4udHJpZ2dlcjpob3ZlciB7XG4gIGNvbG9yOiAjMTg5MGZmO1xufVxuXG4uc2lkZWJhci1sb2dvIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbGluZS1oZWlnaHQ6IDY0cHg7XG4gIGJhY2tncm91bmQ6ICMwMDE1Mjk7XG4gIHRyYW5zaXRpb246IGFsbCAwLjNzO1xufVxuXG4uc2lkZWJhci1sb2dvIGltZyB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgaGVpZ2h0OiAzMnB4O1xuICB3aWR0aDogMzJweDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuLnNpZGViYXItbG9nbyBoMSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDAgMCAyMHB4O1xuICBjb2xvcjogI2ZmZjtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBmb250LWZhbWlseTogQXZlbmlyLCBIZWx2ZXRpY2EgTmV1ZSwgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxubnotaGVhZGVyIHtcbiAgcGFkZGluZzogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIHotaW5kZXg6IDI7XG59XG5cbi5hcHAtaGVhZGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBoZWlnaHQ6IDY0cHg7XG4gIHBhZGRpbmc6IDA7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDRweCByZ2JhKDAsIDIxLCA0MSwgMC4wOCk7XG59XG5cbm56LWNvbnRlbnQge1xuICBtYXJnaW46IDI0cHg7XG59XG5cbi5pbm5lci1jb250ZW50IHtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgaGVpZ2h0OiBhdXRvO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -438,19 +451,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/locales/zh */ "./node_modules/@angular/common/locales/zh.js");
-/* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/table-database/table-database.module */ "./src/app/pages/table-database/table-database.module.ts");
-/* harmony import */ var _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/table-base-charts/table-base-charts.module */ "./src/app/pages/table-base-charts/table-base-charts.module.ts");
-/* harmony import */ var _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/test-index/test-index.module */ "./src/app/pages/test-index/test-index.module.ts");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/locales/zh */ "./node_modules/@angular/common/locales/zh.js");
+/* harmony import */ var _angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/table-database/table-database.module */ "./src/app/pages/table-database/table-database.module.ts");
+/* harmony import */ var _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/table-base-charts/table-base-charts.module */ "./src/app/pages/table-base-charts/table-base-charts.module.ts");
+/* harmony import */ var _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/test-index/test-index.module */ "./src/app/pages/test-index/test-index.module.ts");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/fesm2015/ant-design-icons-angular-icons.js");
 
 
 
@@ -466,35 +480,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_angular_common__WEBPACK_IMPORTED_MODULE_8__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_9___default.a);
+
+Object(_angular_common__WEBPACK_IMPORTED_MODULE_9__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_10___default.a);
 
 const icons = [
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["MenuFoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["MenuUnfoldOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["DashboardOutline"],
-    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_14__["FormOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_15__["MenuFoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_15__["MenuUnfoldOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_15__["DashboardOutline"],
+    _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_15__["FormOutline"],
+];
+const routes = [
+    {
+        path: "",
+        component: _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_11__["TableDatabaseModule"],
+    },
 ];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
         imports: [
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
-            ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NgZorroAntdModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-            _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_10__["TableDatabaseModule"],
-            _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_11__["TableBaseChartsModule"],
-            _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_12__["TestIndexModule"],
-            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
+            ng_zorro_antd__WEBPACK_IMPORTED_MODULE_6__["NgZorroAntdModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
+            _pages_table_database_table_database_module__WEBPACK_IMPORTED_MODULE_11__["TableDatabaseModule"],
+            _pages_table_base_charts_table_base_charts_module__WEBPACK_IMPORTED_MODULE_12__["TableBaseChartsModule"],
+            _pages_test_index_test_index_module__WEBPACK_IMPORTED_MODULE_13__["TestIndexModule"],
+            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"]
         ],
         providers: [
-            { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NZ_I18N"], useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["zh_CN"] },
-            { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_5__["NZ_ICONS"], useValue: icons },
+            { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_6__["NZ_I18N"], useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_6__["zh_CN"] },
+            { provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_6__["NZ_ICONS"], useValue: icons },
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
     })
 ], AppModule);
 
@@ -1308,7 +1330,7 @@ TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         declarations: [_ngx_charts_ngx_charts_component__WEBPACK_IMPORTED_MODULE_5__["NgxChartsComponent"], _ng_charts_ng_charts_component__WEBPACK_IMPORTED_MODULE_6__["NgChartsComponent"], _zorro_charts_zorro_charts_component__WEBPACK_IMPORTED_MODULE_7__["ZorroChartsComponent"]],
         imports: [
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes),
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_4__["MatGridListModule"],
             ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_8__["NzFormModule"],
@@ -1317,7 +1339,7 @@ TableBaseChartsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"],
             ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_12__["NzGridModule"],
-            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]
+            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"],
         ],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
     })
@@ -1720,7 +1742,7 @@ TableDatabaseModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ng_database_ng_database_component__WEBPACK_IMPORTED_MODULE_15__["NgDatabaseComponent"],
         ],
         imports: [
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes),
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _swimlane_ngx_datatable__WEBPACK_IMPORTED_MODULE_4__["NgxDatatableModule"],
             _angular_material_table__WEBPACK_IMPORTED_MODULE_5__["MatTableModule"],
@@ -1839,6 +1861,79 @@ ZorroDatabaseComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/pages/test-index/api-test/api-test.component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/pages/test-index/api-test/api-test.component.scss ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3Rlc3QtaW5kZXgvYXBpLXRlc3QvYXBpLXRlc3QuY29tcG9uZW50LnNjc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/pages/test-index/api-test/api-test.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/pages/test-index/api-test/api-test.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: FilterElement, ApiTestComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterElement", function() { return FilterElement; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiTestComponent", function() { return ApiTestComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _test_index_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../test-index.service */ "./src/app/pages/test-index/test-index.service.ts");
+
+
+
+class FilterElement {
+    constructor() {
+        this.currentUserGID = "";
+    }
+}
+let ApiTestComponent = class ApiTestComponent {
+    constructor(db) {
+        this.db = db;
+        this.dataSet = [];
+        this.tabledata = new FilterElement();
+    }
+    ngOnInit() {
+        //get 请求
+        this.tabledata.currentUserGID = "7000020126";
+        this.db.getReportMenu(this.tabledata).subscribe((x) => {
+            this.dataSet = x;
+        });
+        //post 请求
+        let data;
+        let content;
+        this.searchForm = {
+            id: data.applicationId,
+            bundleID: data.bundleID,
+            content: content,
+        };
+        let observable = this.db.findOrder(this.searchForm);
+    }
+};
+ApiTestComponent.ctorParameters = () => [
+    { type: _test_index_service__WEBPACK_IMPORTED_MODULE_2__["TestIndexService"] }
+];
+ApiTestComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "app-api-test",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./api-test.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/test-index/api-test/api-test.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./api-test.component.scss */ "./src/app/pages/test-index/api-test/api-test.component.scss")).default]
+    })
+], ApiTestComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/test-index/form-list/form-list.component.scss":
 /*!*********************************************************************!*\
   !*** ./src/app/pages/test-index/form-list/form-list.component.scss ***!
@@ -1879,7 +1974,7 @@ let FormListComponent = class FormListComponent {
     ngOnInit() { }
     foodselect(value) {
         if (value == "SelectAll") {
-            this.FoodData = this.mat();
+            this.FoodData = this.foodmat();
             return;
         }
         if (value == "CancelAll") {
@@ -1889,8 +1984,24 @@ let FormListComponent = class FormListComponent {
         debugger;
     }
     headselect(value) {
+        if (value == "SelectAll") {
+            this.HeadData = [];
+            return;
+        }
+        if (value == "CancelAll") {
+            this.HeadData = [];
+            return;
+        }
+        debugger;
     }
-    mat() {
+    headchange(value) {
+        console.log("-----test select value-----", value);
+        for (let i = 0; i <= value.length; i++) {
+            this.HeadData = value[i++];
+        }
+        console.log("-----this.HeadData-----", this.HeadData);
+    }
+    foodmat() {
         let all = [];
         this.foods.forEach((x) => {
             all.push(x.value);
@@ -1926,10 +2037,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form-list/form-list.component */ "./src/app/pages/test-index/form-list/form-list.component.ts");
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm2015/select.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
-/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+/* harmony import */ var _api_test_api_test_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./api-test/api-test.component */ "./src/app/pages/test-index/api-test/api-test.component.ts");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm2015/select.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+/* harmony import */ var ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/table */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-table.js");
+
+
 
 
 
@@ -1944,23 +2059,353 @@ const routes = [
         path: "form-test",
         component: _form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__["FormListComponent"],
     },
+    {
+        path: "api-test",
+        component: _api_test_api_test_component__WEBPACK_IMPORTED_MODULE_5__["ApiTestComponent"],
+    }
 ];
 let TestIndexModule = class TestIndexModule {
 };
 TestIndexModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__["FormListComponent"]],
+        declarations: [_form_list_form_list_component__WEBPACK_IMPORTED_MODULE_4__["FormListComponent"], _api_test_api_test_component__WEBPACK_IMPORTED_MODULE_5__["ApiTestComponent"]],
         imports: [
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes),
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes),
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-            _angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
-            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"]
+            _angular_material_select__WEBPACK_IMPORTED_MODULE_6__["MatSelectModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_9__["MatButtonToggleModule"],
+            ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_10__["NzTableModule"]
         ],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]],
     })
 ], TestIndexModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/test-index/test-index.service.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pages/test-index/test-index.service.ts ***!
+  \********************************************************/
+/*! exports provided: TestIndexService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestIndexService", function() { return TestIndexService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _utils_conn_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/conn.service */ "./src/app/pages/utils/conn.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+
+let TestIndexService = class TestIndexService {
+    constructor(http, conn) {
+        this.http = http;
+        this.conn = conn;
+    }
+    getReportMenu(filterpara) {
+        const addr = "/WeatherForecast";
+        const params = {
+        //currentUserGID: filterpara.currentUserGID,
+        };
+        return this.conn.get(addr, params);
+    }
+    findOrder(searchCond) {
+        console.log("searchCond:" + searchCond.id);
+        let url = "/api/v1/applications/" + searchCond.id;
+        let params = {
+            BundleID: searchCond.bundleID,
+            Content: searchCond.content,
+        };
+        return this.conn.post(url, params);
+    }
+};
+TestIndexService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
+    { type: _utils_conn_service__WEBPACK_IMPORTED_MODULE_1__["ConnService"] }
+];
+TestIndexService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
+        providedIn: "root",
+    })
+], TestIndexService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/utils/conn.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/pages/utils/conn.service.ts ***!
+  \*********************************************/
+/*! exports provided: ConnService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConnService", function() { return ConnService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _const_utils_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./const-utils.service */ "./src/app/pages/utils/const-utils.service.ts");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/message */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-message.js");
+/* harmony import */ var ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/notification */ "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd-notification.js");
+/* harmony import */ var _date_utils_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./date-utils.service */ "./src/app/pages/utils/date-utils.service.ts");
+
+
+
+
+
+
+
+
+let ConnService = class ConnService {
+    constructor(_httpClient, constUtil, dateUtil, message, notification) {
+        this._httpClient = _httpClient;
+        this.constUtil = constUtil;
+        this.dateUtil = dateUtil;
+        this.message = message;
+        this.notification = notification;
+        this._httpHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+    }
+    get(url, params, useBlob = false) {
+        let paramsStr = '';
+        let hasParam = false;
+        if (params) {
+            let paramCount = 0;
+            for (const key in params) {
+                hasParam = true;
+                paramCount += 1;
+                if (paramCount === 1) {
+                    paramsStr += key + '=' + encodeURIComponent(params[key]);
+                }
+                else {
+                    paramsStr += '&' + key + '=' + encodeURIComponent(params[key]);
+                }
+            }
+            if (hasParam) {
+                paramsStr = '?' + paramsStr;
+            }
+        }
+        const accessURL = this.constUtil.getBaseURL() + url + paramsStr;
+        const observable = this._httpClient.get(accessURL, this.getOption(useBlob));
+        this.message.remove();
+        this.id = this.message.loading('数据加载中。。。', {
+            nzDuration: 0,
+        }).messageId;
+        // return observable;
+        return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"]((observer) => {
+            observable.subscribe((successRes) => {
+                this.message.remove();
+                this.message.success('完成！', {
+                    nzDuration: 2500,
+                });
+                observer.next(successRes);
+                observer.complete();
+                return;
+            }, (errorRes) => {
+                this.message.remove();
+                observer.error(errorRes);
+                if (errorRes.error.Code && errorRes.error.MessageEN) {
+                    this.notification.create('warning', 'Warning', errorRes.error.MessageCN, {
+                        nzDuration: 0,
+                    });
+                }
+                else {
+                    this.notification.create('error', 'Error', '失败！', {
+                        nzDuration: 0,
+                    });
+                }
+                observer.complete();
+                return;
+            });
+        });
+    }
+    post(url, body) {
+        let accessURL = this.constUtil.getBaseURL() + url;
+        console.log(this.getDate() + '>>post url access >> ' + accessURL + ' >> body' + JSON.stringify(body));
+        let observable = this._httpClient.post(accessURL, body, this.getOption());
+        // return observable;
+        this.message.remove();
+        this.id = this.message.loading(this.SystemWaitMessage, {
+            nzDuration: 0,
+        }).messageId;
+        return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"]((observer) => {
+            observable.subscribe((successRes) => {
+                this.message.remove();
+                this.message.success('Finished!', {
+                    nzDuration: 800,
+                });
+                observer.next(successRes);
+                if (successRes.Code != 0) {
+                    this.notification.create('warning', 'Message', successRes.MessageEN, { nzDuration: 0 });
+                }
+                observer.complete();
+                return;
+            }, (errorRes) => {
+                this.message.remove();
+                observer.error(errorRes);
+                if (errorRes.error.Code && errorRes.error.MessageEN) {
+                    this.notification.create('warning', 'Warning', errorRes.error.MessageEN, { nzDuration: 0 });
+                }
+                else {
+                    this.notification.create('error', 'Error', this.SystemErrorMessage, { nzDuration: 0 });
+                }
+                observer.complete();
+                return;
+            });
+        });
+    }
+    getOption(useBlob = false) {
+        if (useBlob) {
+            return {
+                responseType: 'blob',
+                observe: 'response',
+            };
+        }
+    }
+    getDate() {
+        return this.dateUtil.dateFormat('YYYY-mm-dd HH:MM:SS', new Date());
+    }
+};
+ConnService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _const_utils_service__WEBPACK_IMPORTED_MODULE_4__["ConstUtilsService"] },
+    { type: _date_utils_service__WEBPACK_IMPORTED_MODULE_7__["DateUtilsService"] },
+    { type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_5__["NzMessageService"] },
+    { type: ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_6__["NzNotificationService"] }
+];
+ConnService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root',
+    })
+], ConnService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/utils/const-utils.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/utils/const-utils.service.ts ***!
+  \****************************************************/
+/*! exports provided: ConstUtilsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConstUtilsService", function() { return ConstUtilsService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+const baseUrl = 'https://localhost:44397';
+let ConstUtilsService = class ConstUtilsService {
+    constructor() { }
+    getBaseURL() {
+        return baseUrl;
+    }
+};
+ConstUtilsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root',
+    })
+], ConstUtilsService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/utils/date-utils.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/pages/utils/date-utils.service.ts ***!
+  \***************************************************/
+/*! exports provided: DateUtilsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DateUtilsService", function() { return DateUtilsService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let DateUtilsService = class DateUtilsService {
+    constructor() { }
+    // tslint:disable-next-line:typedef
+    dateFormat(fmt, date) {
+        let ret;
+        if (!date.getFullYear) {
+            if (date._d) {
+                date = date._d;
+            }
+            else {
+                date = new Date(date);
+            }
+        }
+        const opt = {
+            'Y+': date.getFullYear().toString(),
+            'm+': (date.getMonth() + 1).toString(),
+            'd+': date.getDate().toString(),
+            'H+': date.getHours().toString(),
+            'M+': date.getMinutes().toString(),
+            'S+': date.getSeconds().toString(),
+        };
+        // tslint:disable-next-line:forin
+        for (const k in opt) {
+            ret = new RegExp('(' + k + ')').exec(fmt);
+            if (ret) {
+                fmt = fmt.replace(ret[1], ret[1].length === 1 ? opt[k] : ('0' + opt[k]).slice(0 - ret[1].length));
+                // (opt[k].padStart(ret[1].length, "0"))
+            }
+        }
+        return fmt;
+    }
+    check(searchDate) {
+        /** 2020-02-22 */
+        const formerDate = this.dateFormat('YYYY-mm-dd', searchDate);
+        const reg = /^[1-9]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/;
+        // tslint:disable-next-line:max-line-length
+        // 上面是没有排除月份以及天数为00的精简版正则表达式，右边是优化版本的日期正则表达式可以排除月份为00以及天数00   /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/;
+        const regExp = new RegExp(reg);
+        if (!regExp.test(formerDate)) {
+            return false;
+        }
+        return true;
+    }
+    // tslint:disable-next-line:typedef
+    isAfter(dateA, dateB) {
+        let date1;
+        let date2;
+        if (typeof dateA === 'string') {
+            date1 = new Date(dateA);
+        }
+        else {
+            date1 = dateA;
+        }
+        if (typeof dateB === 'string') {
+            date2 = new Date(dateB);
+        }
+        else {
+            date2 = dateB;
+        }
+        const dateForm1 = new Date(this.dateFormat('YYYY-mm-dd', date1));
+        const dateForm2 = new Date(this.dateFormat('YYYY-mm-dd', date2));
+        return dateForm1 > dateForm2;
+    }
+};
+DateUtilsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root',
+    })
+], DateUtilsService);
 
 
 
