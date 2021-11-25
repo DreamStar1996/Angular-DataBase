@@ -24,7 +24,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [FormListComponent, ApiTestComponent],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes),
     CommonModule,
     MatSelectModule,
     FormsModule,

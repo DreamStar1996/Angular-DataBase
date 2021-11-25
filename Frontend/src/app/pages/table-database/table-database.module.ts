@@ -37,7 +37,7 @@ const routes: Routes = [
     NgDatabaseComponent,
   ],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes),
     CommonModule,
     NgxDatatableModule,
     MatTableModule,
