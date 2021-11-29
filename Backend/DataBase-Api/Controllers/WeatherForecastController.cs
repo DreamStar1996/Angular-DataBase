@@ -8,6 +8,9 @@ using DataBase_Model;
 
 namespace DataBase_Api.Controllers
 {
+    /// <summary>
+    /// 数据显示器
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -24,6 +27,10 @@ namespace DataBase_Api.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Data数据测试
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

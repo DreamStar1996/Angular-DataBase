@@ -1,15 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace DataBase_Api
 {
@@ -37,7 +34,16 @@ namespace DataBase_Api
 
             services.AddControllers();
             //注册Swagger
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                // 获取xml文件名
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                // 获取xml文件路径
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                // 添加控制器层注释，true表示显示控制器注释
+                options.IncludeXmlComments(xmlPath, true);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

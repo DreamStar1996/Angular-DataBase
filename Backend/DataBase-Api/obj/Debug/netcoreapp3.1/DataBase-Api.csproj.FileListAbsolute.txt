@@ -81,9 +81,6 @@ D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\bin\Debug\netcoreapp3.1\Da
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.csprojAssemblyReference.cache
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.AssemblyInfoInputs.cache
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.AssemblyInfo.cs
-D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.csproj.CoreCompileInputs.cache
-D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.RazorTargetAssemblyInfo.cache
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.csproj.CopyComplete
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\staticwebassets\DataBase-Api.StaticWebAssets.Manifest.cache
@@ -91,3 +88,7 @@ D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\st
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.dll
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.pdb
 D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.genruntimeconfig.cache
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.csproj.CoreCompileInputs.cache
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Test_Program\Angular-DataBase\Backend\DataBase-Api\obj\Debug\netcoreapp3.1\DataBase-Api.MvcApplicationPartsAssemblyInfo.cache
