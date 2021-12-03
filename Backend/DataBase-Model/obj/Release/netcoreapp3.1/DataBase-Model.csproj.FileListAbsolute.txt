@@ -1,0 +1,13 @@
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\bin\Release\netcoreapp3.1\DataBase-Model.deps.json
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\bin\Release\netcoreapp3.1\DataBase-Model.runtimeconfig.json
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\bin\Release\netcoreapp3.1\DataBase-Model.runtimeconfig.dev.json
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\bin\Release\netcoreapp3.1\DataBase-Model.dll
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\bin\Release\netcoreapp3.1\DataBase-Model.pdb
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.csproj.AssemblyReference.cache
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.GeneratedMSBuildEditorConfig.editorconfig
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.AssemblyInfoInputs.cache
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.AssemblyInfo.cs
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.csproj.CoreCompileInputs.cache
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.dll
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.pdb
+G:\Git-Program\Angular-DataBase\Backend\DataBase-Model\obj\Release\netcoreapp3.1\DataBase-Model.genruntimeconfig.cache
