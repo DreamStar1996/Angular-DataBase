@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pFDe01qKUqJS745Z678jvAGXePJ7pOTcem6pZQHKwuAIARIaf6lgFG+PEC5foLdRxx5ia0kzLozciVwdgo2UEQ==",
+  "dgSpecHash": "5CB8QATBy1doiLkWQG9j/jQmMZrEQyOCO+pizoZNolT5MJqOYtqU9x/Rq+9b7fzJj+zF/MqjPhB/GNkuQ4GiEg==",
   "success": true,
-  "projectFilePath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj",
+  "projectFilePath": "D:\\Test_Program\\Angular-DataBase\\DataBase-Model\\DataBase-Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\7000020126\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\7000020126\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

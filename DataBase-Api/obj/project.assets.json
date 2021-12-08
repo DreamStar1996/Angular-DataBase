@@ -5984,11 +5984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj",
+      "projectUniqueName": "D:\\Test_Program\\Angular-DataBase\\DataBase-Api\\DataBase-Api.csproj",
       "projectName": "DataBase-Api",
-      "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\DataBase-Api.csproj",
+      "projectPath": "D:\\Test_Program\\Angular-DataBase\\DataBase-Api\\DataBase-Api.csproj",
       "packagesPath": "C:\\Users\\7000020126\\.nuget\\packages\\",
-      "outputPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Api\\obj\\",
+      "outputPath": "D:\\Test_Program\\Angular-DataBase\\DataBase-Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6009,8 +6009,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj": {
-              "projectPath": "D:\\Test_Program\\Angular-DataBase\\Backend\\DataBase-Model\\DataBase-Model.csproj"
+            "D:\\Test_Program\\Angular-DataBase\\DataBase-Model\\DataBase-Model.csproj": {
+              "projectPath": "D:\\Test_Program\\Angular-DataBase\\DataBase-Model\\DataBase-Model.csproj"
             }
           }
         }
